@@ -72,3 +72,7 @@ The site uses semantic HTML, ARIA labels, skip link, 44px minimum tap targets, f
 │       └── main.js     # Trade pill rotation, nav, IntersectionObserver, FAQ, form
 └── README.md
 ```
+
+## Deployment
+
+Auto-deployed from GitHub via Vercel Git integration.
