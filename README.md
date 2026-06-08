@@ -78,3 +78,5 @@ The site uses semantic HTML, ARIA labels, skip link, 44px minimum tap targets, f
 Auto-deployed from GitHub via Vercel Git integration.
 
 Last integration check: 2026-06-08T16:19:07Z
+
+Git integration active: 2026-06-08T16:26:18Z
