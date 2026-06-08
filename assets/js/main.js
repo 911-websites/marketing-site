@@ -105,6 +105,26 @@
     animateEls.forEach(el => el.classList.add('is-visible'));
   }
 
+  /* ── STAGGER INDICES ────────────────────────────── */
+  // Give each child of a .stagger container an incremental --i for cascade delay.
+  document.querySelectorAll('.stagger').forEach(container => {
+    Array.from(container.children).forEach((child, i) => {
+      child.style.setProperty('--i', i);
+    });
+  });
+
+  /* ── CURSOR SPOTLIGHT ON DARK CARDS ─────────────── */
+  // Fine-pointer only — skip the work on touch devices.
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.card--dark').forEach(card => {
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width) * 100 + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height) * 100 + '%');
+      });
+    });
+  }
+
   /* ── FAQ ACCORDION ──────────────────────────────── */
   const faqItems = document.querySelectorAll('.faq-item');
 
