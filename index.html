@@ -3,817 +3,488 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>911 Websites — Fast, Mobile-First Websites for HVAC &amp; Skilled Trades</title>
-  <meta name="description" content="911 Websites builds lightning-fast, mobile-first websites with AI lead capture for HVAC and skilled-trade businesses. Free redesign in 24 hours. No setup fee. No contracts." />
+  <title>911 Websites - Fast websites and AI lead capture for HVAC and trades</title>
+  <meta name="description" content="911 Websites builds fast, mobile-first websites with AI lead capture for HVAC and skilled-trade businesses. Free redesign in 24 hours. No setup fee. No contracts." />
   <meta name="theme-color" content="#0A0A0A" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="911 Websites — Built for Skilled Trades" />
-  <meta property="og:description" content="Turn your trade site visitors into booked jobs. Free redesign in 24 hours. AI lead capture included. No contracts." />
+  <meta property="og:title" content="911 Websites - Built for skilled trades" />
+  <meta property="og:description" content="Turn trade site visitors into booked jobs. Free redesign in 24 hours, AI lead capture included, no contracts." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://911websites.com" /><!-- TODO: update domain -->
-  <meta property="og:image" content="https://911websites.com/assets/og-image.jpg" /><!-- TODO: add OG image -->
+  <meta property="og:image" content="https://911websites.com/assets/og-image.jpg" /><!-- TODO: add a 1200x630 OG image -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="911 Websites — Fast Sites for HVAC &amp; Trades" />
+  <meta name="twitter:title" content="911 Websites - Fast sites for HVAC and trades" />
   <meta name="twitter:description" content="Free redesign in 24 hours. AI lead capture. No contracts. Built for trade businesses." />
 
-  <!-- Favicon — 911 logo as SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 18'%3E%3Crect x='0' y='0' width='15' height='18' rx='3.5' fill='%23ED1C24'/%3E%3Ctext x='7.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E9%3C/text%3E%3Crect x='18.5' y='0' width='15' height='18' rx='3.5' fill='%23ED1C24'/%3E%3Ctext x='26' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3Crect x='37' y='0' width='15' height='18' rx='3.5' fill='%23ED1C24'/%3E%3Ctext x='44.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3C/svg%3E" />
+  <!-- Favicon: the 911 logo, recreated as SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 18'%3E%3Crect x='0' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='7.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E9%3C/text%3E%3Crect x='18.5' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='26' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3Crect x='37' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='44.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3C/svg%3E" />
 
-  <!-- Google Fonts — Archivo (display) + Inter (UI) -->
+  <!-- Google Fonts: Bricolage Grotesque (display) + Hanken Grotesk (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip">Skip to content</a>
 
-  <!-- ══════════════════════════════════════
-       1. STICKY NAV
-  ══════════════════════════════════════ -->
+  <!-- NAV -->
   <header class="nav" id="nav" role="banner">
-    <div class="nav__inner container">
-      <a href="/" class="logo" aria-label="911 Websites — home">
-        <div class="logo__squares" aria-hidden="true">
+    <div class="nav__inner wrap">
+      <a href="/" class="logo" aria-label="911 Websites, home">
+        <span class="logo__sq-group" aria-hidden="true">
           <span class="logo__sq">9</span>
           <span class="logo__sq">1</span>
           <span class="logo__sq">1</span>
-        </div>
-        <span class="logo__word">WEBSITES</span>
+        </span>
+        <span class="logo__word">Websites</span>
       </a>
 
-      <button class="nav__toggle" id="navToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="navLinks">
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav__links" id="navLinks" aria-label="Site navigation">
-        <a href="#what-we-build">What We Build</a>
-        <a href="#the-offer">The Offer</a>
-        <a href="#social-proof">Results</a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#build">What you get</a>
+        <a href="#offer">The offer</a>
+        <a href="#proof">Results</a>
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a href="#claim" class="btn btn--pill nav__cta">Get free redesign →</a>
+      <a href="#claim" class="btn btn--primary nav__cta" style="min-height:44px;padding:11px 22px;font-size:0.9375rem;">Get free redesign</a>
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main">
 
-    <!-- ══════════════════════════════════════
-         2. HERO
-    ══════════════════════════════════════ -->
-    <section class="section hero" id="hero" aria-labelledby="hero-headline">
-      <div class="container hero__inner">
+    <!-- HERO -->
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy" data-reveal>
+          <p class="kicker">Built for skilled trades</p>
+          <h1 class="mega hero__title" id="hero-title">
+            <span class="line">Turn your
+              <span class="trade" id="trade" aria-live="polite">HVAC</span>
+            </span>
+            <span class="line">site into your <span class="accent">best closer.</span></span>
+          </h1>
+          <p class="lead hero__lead">
+            We build fast, mobile-first websites for trade businesses, with an AI assistant that answers, qualifies, and books leads around the clock. When the furnace quits at 9pm, the company that looks ready gets the call.
+          </p>
+          <div class="hero__actions">
+            <a href="#claim" class="btn btn--primary btn--lg">
+              Claim your free redesign
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#build" class="btn btn--ghost btn--lg">See what you get</a>
+          </div>
+          <p class="hero__micro">No setup fee. No contracts. Money-back guaranteed.</p>
 
-        <p class="kicker" aria-label="Section label: Built for skilled trades">— BUILT FOR SKILLED TRADES</p>
+          <ul class="trust">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Live in 24 hours
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4-3 7.5-7 8.5C8 18.5 5 15 5 11V6z"/><path d="M9 11.5l2 2 4-4.5"/></svg>
+              Money-back guarantee
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+              Mobile-first
+            </li>
+          </ul>
+        </div>
 
-        <h1 class="display" id="hero-headline">
-          Turn your
-          <span class="trade-pill-wrap" aria-live="polite" aria-atomic="true">
-            <span class="trade-pill" id="tradePill">HVAC</span>
+        <!-- Live AI chat: a real animated component (not a fake browser) -->
+        <aside class="chatcard" data-reveal aria-label="Example of the AI assistant booking an after-hours job">
+          <div class="chatcard__head">
+            <span class="chatcard__avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <div>
+              <div class="chatcard__who">Air Care Experts assistant</div>
+              <div class="chatcard__status"><span class="live-dot" aria-hidden="true"></span> Answering now, 11:04 PM</div>
+            </div>
+          </div>
+          <div class="chatcard__feed" id="chatFeed" role="log" aria-label="Example conversation">
+            <!-- messages injected by JS for the live-typing effect; static fallback below -->
+            <noscript>
+              <div class="msg msg--ai" style="opacity:1;transform:none;">Hi, need service today? I can book you in right now.</div>
+              <div class="msg msg--user" style="opacity:1;transform:none;">My AC just died and it is 11pm.</div>
+              <div class="msg msg--ai" style="opacity:1;transform:none;">Got it. A tech can be there at 7am. Want me to lock it in?</div>
+            </noscript>
+          </div>
+          <div class="chatcard__captured" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Lead captured and sent to your phone
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STAKES -->
+    <section class="section stakes" aria-labelledby="stakes-title" data-reveal>
+      <div class="wrap stakes__grid">
+        <div class="stakes__numberblock">
+          <div class="stakes__stat">53<sup>%</sup></div>
+          <p class="stakes__statlabel">of people leave a site on their phone if it takes more than three seconds to load.</p>
+        </div>
+        <div class="stakes__story">
+          <p class="kicker">The 9pm moment</p>
+          <h2 class="h2" id="stakes-title">A pipe bursts. They grab their phone and start <span class="accent">tapping.</span></h2>
+          <p class="lead">They are not reading reviews yet. They are scanning sites, fast. The first one that loads quick, looks sharp, and makes it easy to book wins the job. Your crew is ready. The only question is whether your website is.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO: what you get -->
+    <section class="section" id="build" aria-labelledby="build-title" data-reveal>
+      <div class="wrap">
+        <p class="kicker">What you get</p>
+        <h2 class="h2" id="build-title">A website built to <span class="accent">win the call.</span></h2>
+
+        <div class="bento stagger">
+          <!-- Feature tile -->
+          <article class="tile tile--feature">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <p class="tile__big">An AI assistant that books jobs while you are on a roof.</p>
+            <p>It greets every visitor, answers common questions, qualifies the job, and books the appointment. Day or night, busy season or slow. Every lead lands on your phone, ready to go.</p>
+            <div class="tile__chips">
+              <span class="minichip">Answers 24/7</span>
+              <span class="minichip">Qualifies the job</span>
+              <span class="minichip">Books the appointment</span>
+            </div>
+          </article>
+
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </span>
+            <h3 class="h3">Mobile-first design</h3>
+            <p>Built for the phone in your customer's hand, where almost every emergency search starts.</p>
+          </article>
+
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <h3 class="h3">Sub-second speed</h3>
+            <p>Loads faster than the competition, so visitors stay on your page instead of bouncing to theirs.</p>
+          </article>
+
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </span>
+            <h3 class="h3">Local SEO</h3>
+            <p>Set up to show up when someone nearby searches for your trade in your service area.</p>
+          </article>
+
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg>
+            </span>
+            <h3 class="h3">Review generation</h3>
+            <p>Automatic follow-ups after each job turn happy customers into Google reviews, with no chasing.</p>
+          </article>
+
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+            </span>
+            <h3 class="h3">Lead dashboard</h3>
+            <p>Every inquiry, call, and booking in one simple place built for how trade businesses work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMBERS: the one red moment -->
+    <section class="section numbers" aria-labelledby="numbers-title" data-reveal>
+      <div class="wrap">
+        <p class="kicker kicker--on-red">The case</p>
+        <h2 class="h2" id="numbers-title">Your website should pay for itself.</h2>
+        <div class="numbers__grid stagger" role="list">
+          <div class="numbers__item" role="listitem">
+            <div class="numbers__n">3<sup>s</sup></div>
+            <p>People decide whether to trust you online in about three seconds. Your site gets one shot.</p>
+          </div>
+          <div class="numbers__item" role="listitem">
+            <div class="numbers__n">53<sup>%</sup></div>
+            <p>leave a slow page on mobile before it even loads. That is a job handed to the next number on the list.</p>
+          </div>
+          <div class="numbers__item" role="listitem">
+            <div class="numbers__n">2<sup>x</sup></div>
+            <p>Mobile-first sites convert far better than desktop-first ones. Same traffic, more booked work.</p>
+          </div>
+          <div class="numbers__item" role="listitem">
+            <div class="numbers__n">1</div>
+            <p>One booked emergency call covers your whole monthly fee. Everything after that is profit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER: numbered steps -->
+    <section class="section" id="offer" aria-labelledby="offer-title" data-reveal>
+      <div class="wrap">
+        <div class="offer__head">
+          <p class="kicker">The offer</p>
+          <h2 class="h2" id="offer-title">We rebuild your site for free. You decide if you keep it.</h2>
+          <p class="lead">No risk, no upfront cost, no pressure. Here is exactly how it works.</p>
+        </div>
+
+        <ol class="steps stagger">
+          <li class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <div>
+              <h3 class="h3">You tell us about the business</h3>
+              <p>A short call to learn your trade, your service area, and what you want customers to do first when they land on your site.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <div>
+              <h3 class="h3">We build it in 24 hours</h3>
+              <p>A brand-new, mobile-first site with AI lead capture built in, ready for you to review. You pay nothing to see it.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <div>
+              <h3 class="h3">You keep it, or you walk away</h3>
+              <p>Love it, and one flat monthly fee covers hosting, edits, maintenance, AI lead capture, and support. Not for you? No invoice, no hard feelings.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="offer__guarantee">
+          <p>No setup fee. No long contracts. A money-back guarantee on every site. AI lead capture is built into all of them, and if it does not bring in more leads, we make it right.</p>
+          <a href="#claim" class="btn btn--primary btn--lg">
+            Claim your free redesign
+            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section section--seam" id="proof" aria-labelledby="proof-title" data-reveal>
+      <div class="wrap">
+        <p class="kicker">Results</p>
+        <h2 class="h2" id="proof-title">Trade owners who stopped losing the call.</h2>
+
+        <div class="proof__grid stagger">
+          <!-- PLACEHOLDER: replace with a real client quote -->
+          <article class="quote quote--feature">
+            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote__text">"We went from three calls a week to over twenty in the first month. The AI chat alone paid for half a year of service. I tell every trade owner I know."</p>
+            <div class="quote__by">
+              <span class="quote__avatar" style="--av:#ED1C24;" aria-hidden="true">JR</span>
+              <div>
+                <p class="quote__name"><span class="ph-name"></span></p>
+                <p class="quote__role"><span class="ph-role"></span></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: replace with a real client quote -->
+          <article class="quote">
+            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote__text">"My old site was slow and embarrassing. The new one was live the next morning, and we booked four emergency calls that first week we would have lost."</p>
+            <div class="quote__by">
+              <span class="quote__avatar" style="--av:#2563EB;" aria-hidden="true">MS</span>
+              <div>
+                <p class="quote__name"><span class="ph-name"></span></p>
+                <p class="quote__role"><span class="ph-role"></span></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLACEHOLDER: replace with a real client quote -->
+          <article class="quote">
+            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote__text">"Three agencies burned me before. These guys showed me the finished site before I paid a cent. That is what earned the trust."</p>
+            <div class="quote__by">
+              <span class="quote__avatar" style="--av:#0E9F6E;" aria-hidden="true">DL</span>
+              <div>
+                <p class="quote__name"><span class="ph-name"></span></p>
+                <p class="quote__role"><span class="ph-role"></span></p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="muted" style="margin-top:24px;font-size:0.8125rem;">Quotes shown are placeholders. Real client results coming soon.</p>
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section class="section" id="addons" aria-labelledby="addons-title" data-reveal>
+      <div class="wrap">
+        <div class="addons__head">
+          <p class="kicker">Go further</p>
+          <h2 class="h2" id="addons-title">Add more when you are ready.</h2>
+          <p class="lead">Every site starts as a fast, lead-getting foundation. Bolt on what you need, one flat fee, no agency retainer.</p>
+        </div>
+
+        <div class="addon-grid stagger">
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>
+            <div><h3>AI phone receptionist</h3><p>Answers calls, qualifies jobs, and books work, even when the whole crew is out.</p></div>
+          </div>
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
+            <div><h3>CRM</h3><p>Every lead, quote, and job in one place. No more lost sticky notes.</p></div>
+          </div>
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg></span>
+            <div><h3>Google reviews</h3><p>Automatic review requests after each job. More stars, higher ranking, more calls.</p></div>
+          </div>
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
+            <div><h3>Social media</h3><p>We post for you, so you stay visible without the hassle of doing it yourself.</p></div>
+          </div>
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+            <div><h3>Blog and SEO content</h3><p>Monthly articles that rank for local searches and bring in organic traffic.</p></div>
+          </div>
+          <div class="addon">
+            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></span>
+            <div><h3>Newsletters and SMS</h3><p>Seasonal reminders and offers that keep past customers calling you back.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--seam" id="faq" aria-labelledby="faq-title" data-reveal>
+      <div class="wrap faq">
+        <div class="faq__head">
+          <p class="kicker" style="justify-content:center;">FAQ</p>
+          <h2 class="h2" id="faq-title">Straight answers.</h2>
+        </div>
+
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a1">How much does it cost?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a1" hidden><p>There is no setup fee and no design charge. The redesign is free to see. If you keep it, you pay one flat monthly fee that covers hosting, edits, maintenance, AI lead capture, and support. We tailor the fee to your business, and the goal is simple: your site should pay for itself with a single booked job.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a2">What is the process?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a2" hidden><p>Fill out the form below. We reach out within a few hours to learn about your business, then build a full mobile-first site within 24 hours for you to review. Approve it and we go live. Want changes? We make them. You pay nothing until you are happy.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a3">Is there a contract?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a3" hidden><p>No. We work month to month. If we are not the right fit, cancel any time. We would rather earn your business every month than lock you in with fine print.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a4">What if I do not like the redesign?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a4" hidden><p>You walk away. No invoice, no pressure. We will ask for quick feedback so we know what missed, but the free redesign is a real offer, not a bait and switch.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a5">What does the AI actually do?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a5" hidden><p>The assistant on your site handles inquiries around the clock. It greets visitors, asks about the problem, collects their details, and books a time. Every lead lands in your dashboard with an instant notification. Think of it as a receptionist that never sleeps and costs a fraction of a part-timer.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="a6">Is "live in 24 hours" for real?<span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="a6" hidden><p>Yes. For most clients we deliver a review-ready site within 24 hours of the intake call. We have built dozens of trade sites and know what converts for HVAC, plumbing, electrical, and roofing. The only thing that slows it down is waiting on details from you.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLAIM -->
+    <section class="section claim" id="claim" aria-labelledby="claim-title" data-reveal>
+      <div class="wrap claim__grid">
+        <div class="claim__pitch">
+          <p class="kicker">Start here</p>
+          <h2 class="display" id="claim-title">Claim your free <span class="accent">redesign.</span></h2>
+          <p class="lead">Tell us where to reach you and we will build your new site within 24 hours. No payment, no commitment.</p>
+          <span class="reassure">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            Free redesign, no setup fee, live in 24 hours
           </span>
-          <br>site visitors into <em class="red">booked jobs.</em>
-        </h1>
-
-        <p class="hero__sub">
-          911 Websites builds lightning-fast, mobile-first websites for HVAC and trade businesses — with AI lead capture built in from day one. When the furnace breaks, the first company that looks trustworthy gets the call.
-        </p>
-
-        <a href="#claim" class="btn btn--red btn--lg">Claim your free redesign →</a>
-        <p class="microcopy">No setup fee · No contracts · Money-back guaranteed</p>
-
-        <!-- Browser Mockup -->
-        <div class="browser-mockup" data-animate aria-label="Example website we would build for an HVAC company">
-          <div class="browser-chrome" aria-hidden="true">
-            <div class="browser-dots">
-              <span class="bdot bdot--red"></span>
-              <span class="bdot bdot--yellow"></span>
-              <span class="bdot bdot--green"></span>
-            </div>
-            <div class="browser-bar">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              aircareexperts.com
-            </div>
-          </div>
-          <div class="browser-content">
-            <div class="mock-site">
-              <div class="mock-nav-bar">
-                <span class="mock-brand">❄️ Air Care Experts</span>
-                <span class="mock-nav-cta">Book Now</span>
-              </div>
-              <div class="mock-hero-block">
-                <p class="mock-headline">AC Down?<br><strong>We Fix It Fast.</strong></p>
-                <p class="mock-sub">Same-day HVAC service · Phoenix &amp; surrounding areas · Licensed &amp; Insured</p>
-                <span class="mock-btn">Get a Free Quote →</span>
-              </div>
-              <div class="mock-stat-row" aria-label="Site trust indicators">
-                <div class="mock-stat"><strong>4.9★</strong><span>Google Rating</span></div>
-                <div class="mock-stat"><strong>2,400+</strong><span>Jobs Booked</span></div>
-                <div class="mock-stat"><strong>&lt;1s</strong><span>Load Speed</span></div>
-              </div>
-            </div>
-            <div class="ai-chat-overlay" aria-label="AI chat assistant example">
-              <p class="ai-chat-msg">Hi! AC issues? I can get a tech to you today 🔧</p>
-              <div class="ai-chips">
-                <span class="chip chip--active">AI Chat Active</span>
-                <span class="chip">Mobile Optimised</span>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <!-- Trust Strip -->
-        <ul class="trust-strip" aria-label="Trust signals">
-          <li><span aria-hidden="true">⚡</span> Live in 24 hours</li>
-          <li aria-hidden="true" class="trust-sep">·</li>
-          <li><span aria-hidden="true">✓</span> Money-back guarantee</li>
-          <li aria-hidden="true" class="trust-sep">·</li>
-          <li><span aria-hidden="true">📱</span> Mobile-first</li>
-        </ul>
-
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         3. YOUR CUSTOMERS
-    ══════════════════════════════════════ -->
-    <section class="section section--light" id="your-customers" aria-labelledby="customers-headline" data-animate>
-      <div class="container">
-        <p class="kicker kicker--dark">— YOUR CUSTOMERS</p>
-        <h2 class="h2" id="customers-headline">
-          They search on their phone. <em class="red-text">Right now.</em>
-        </h2>
-        <p class="body-lg">
-          It's 9pm. Someone's AC stops working. They grab their phone and search "HVAC near me." They're not reading reviews yet — they're scanning sites. The one that loads fast, looks sharp, and shows a clear "Book Now"? That's who gets the call. Your crew is ready for the job. The question is whether your website is ready to deliver it.
-        </p>
-        <div class="image-block image-block--customers" role="img" aria-label="HVAC technician on a job site — The reality: your crew is ready, is your website?">
-          <div class="image-block__overlay">
-            <span class="image-block__label">THE REALITY</span>
-            <p class="image-block__text">Your crew is ready.<br>Is your website?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         4. THE OPPORTUNITY
-    ══════════════════════════════════════ -->
-    <section class="section section--light section--no-top" id="opportunity" aria-labelledby="opportunity-headline" data-animate>
-      <div class="container">
-        <p class="kicker kicker--dark">— THE OPPORTUNITY</p>
-        <div class="opportunity-grid">
-          <div class="stat-card-big">
-            <div class="stat-card-big__num" aria-label="53 percent">53<span class="stat-card-big__unit">%</span></div>
-            <p class="stat-card-big__label">of mobile visitors leave a page that takes longer than 3 seconds to load.</p>
-            <p class="stat-card-big__sub">Your competitor just answered that call.</p>
-          </div>
-          <div class="image-block image-block--opportunity" role="img" aria-label="Customer searching on phone — First to look trustworthy wins the call">
-            <div class="image-block__overlay">
-              <span class="image-block__label">THE TRUTH</span>
-              <p class="image-block__text">First to look trustworthy wins the call.</p>
-            </div>
-          </div>
-        </div>
-        <div class="truth-callout" role="note">
-          <strong>Speed wins the job.</strong> One booked emergency call covers your entire monthly subscription.
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         5. WHAT WE BUILD
-    ══════════════════════════════════════ -->
-    <section class="section section--dark" id="what-we-build" aria-labelledby="build-headline" data-animate>
-      <div class="container">
-        <p class="kicker">— WHAT WE BUILD</p>
-        <h2 class="h2 h2--white" id="build-headline">
-          Fast, beautiful sites that <em class="red">convert.</em>
-        </h2>
-
-        <div class="cards-scroll" role="list" aria-label="Features">
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <p class="card__num">01</p>
-            <p class="card__tag">MOBILE-FIRST DESIGN</p>
-            <h3 class="card__title">Look great on every screen.</h3>
-            <p class="card__desc">Built for the phone in your customer's hand — fast, sharp, and easy to act on at 9pm.</p>
-          </article>
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <p class="card__num">02</p>
-            <p class="card__tag">LIGHTNING PERFORMANCE</p>
-            <h3 class="card__title">Load faster than your competition.</h3>
-            <p class="card__desc">Sub-second load times keep customers on your page — and off your competitor's.</p>
-          </article>
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <p class="card__num">03</p>
-            <p class="card__tag">AI LEAD CAPTURE</p>
-            <h3 class="card__title">Book jobs while you sleep.</h3>
-            <p class="card__desc">Our AI receptionist handles after-hours calls, qualifies leads, and books appointments 24/7.</p>
-          </article>
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-            <p class="card__num">04</p>
-            <p class="card__tag">LOCAL SEO</p>
-            <h3 class="card__title">Rank higher, get found first.</h3>
-            <p class="card__desc">Structured data, local citations, and optimised content so you show up when it matters most.</p>
-          </article>
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="card__num">05</p>
-            <p class="card__tag">REVIEW GENERATION</p>
-            <h3 class="card__title">More 5-star reviews, automatically.</h3>
-            <p class="card__desc">After every job, smart follow-ups turn happy customers into Google reviews — no chasing.</p>
-          </article>
-
-          <article class="card card--dark" role="listitem">
-            <div class="icon-tile icon-tile--dark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <p class="card__num">06</p>
-            <p class="card__tag">LEAD CRM</p>
-            <h3 class="card__title">Every lead in one place.</h3>
-            <p class="card__desc">See every inquiry, call, and form submission in a simple dashboard built for trade businesses.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         6. THE OFFER
-    ══════════════════════════════════════ -->
-    <section class="section section--light" id="the-offer" aria-labelledby="offer-headline" data-animate>
-      <div class="container container--narrow">
-        <p class="kicker kicker--dark">— THE OFFER</p>
-        <h2 class="h2" id="offer-headline">
-          We redesign your website <em class="red-text">for free.</em>
-        </h2>
-        <p class="body-lg">
-          Here's how it works: we build a brand-new, mobile-first website for your business in 24 hours — at zero cost. You see it. You approve it. If you love it, you keep it for one flat monthly fee that covers hosting, edits, maintenance, AI lead capture, and support. No setup fee. No long contracts. If it's not right, you walk away. No invoice, no pressure.
-        </p>
-        <div class="offer-callout" role="note" aria-label="Guarantee details">
-          No setup fee. Money-back guarantee. Built-in AI lead capture on every site — if it doesn't generate more leads, we make it right, guaranteed.
-        </div>
-        <a href="#claim" class="btn btn--red btn--lg">Claim your free redesign →</a>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         7. STATS — FULL RED SECTION
-    ══════════════════════════════════════ -->
-    <section class="section section--red" id="stats" aria-labelledby="stats-headline" data-animate>
-      <div class="container">
-        <p class="kicker kicker--white">— THE NUMBERS</p>
-        <h2 class="h2 h2--white" id="stats-headline">The numbers don't lie.</h2>
-        <div class="stats-grid" role="list">
-
-          <div class="stat-item" role="listitem">
-            <div class="stat-num" aria-label="3 seconds">3<sup aria-hidden="true">s</sup></div>
-            <p class="stat-desc">Customers decide whether to trust you online in under 3 seconds. Your site has one shot at the job.</p>
-          </div>
-
-          <div class="stat-item" role="listitem">
-            <div class="stat-num" aria-label="53 percent">53<span class="stat-pct" aria-hidden="true">%</span></div>
-            <p class="stat-desc">of mobile visitors leave a site that takes more than 3 seconds to load. They're calling the next number on the list.</p>
-          </div>
-
-          <div class="stat-item" role="listitem">
-            <div class="stat-num" aria-label="2 times">2<span class="stat-x" aria-hidden="true">×</span></div>
-            <p class="stat-desc">Mobile-first sites convert significantly better than desktop-first designs. Same traffic, double the booked jobs.</p>
-          </div>
-
-          <div class="stat-item" role="listitem">
-            <div class="stat-num" aria-label="1 job">1</div>
-            <p class="stat-desc">One booked emergency call covers your entire monthly fee. Every job after that is pure return on your site.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         8. AI DEMO
-    ══════════════════════════════════════ -->
-    <section class="section section--dark" id="ai-demo" aria-labelledby="ai-headline" data-animate>
-      <div class="container">
-        <p class="kicker">— AI RECEPTIONIST</p>
-        <h2 class="h2 h2--white" id="ai-headline">
-          Book jobs while <em class="red">your crew sleeps.</em>
-        </h2>
-        <p class="body-lg body-lg--grey">
-          Our AI handles after-hours inquiries, qualifies every lead, and sends you a booked appointment before you wake up. No missed calls. No lost jobs.
-        </p>
-
-        <div class="ai-demo-layout">
-          <!-- Phone Mockup -->
-          <div class="phone-mockup" aria-label="Phone showing AI chat booking a late-night HVAC call">
-            <div class="phone-shell" aria-hidden="true">
-              <div class="phone-notch"></div>
-            </div>
-            <div class="phone-screen">
-              <div class="phone-site-bar">
-                <span class="phone-site-name">❄️ Air Care Experts</span>
-                <span class="phone-site-btn">Call Now</span>
-              </div>
-              <div class="phone-chat" aria-label="Example AI chat conversation">
-
-                <div class="chat-row chat-row--ai">
-                  <span class="chat-avatar" aria-hidden="true">AI</span>
-                  <div class="chat-bubble-msg">
-                    Hi! Need service today? I can book you in right now 👋
-                  </div>
-                </div>
-
-                <div class="chat-row chat-row--user">
-                  <div class="chat-bubble-msg">My AC stopped working, it's 11pm…</div>
-                </div>
-
-                <div class="chat-row chat-row--ai">
-                  <span class="chat-avatar" aria-hidden="true">AI</span>
-                  <div class="chat-bubble-msg">
-                    No worries — we've got you covered. Can I get your name, address, and a good callback number?
-                  </div>
-                </div>
-
-                <div class="chat-row chat-row--user">
-                  <div class="chat-bubble-msg">Mike Torres, 4421 W. Camelback, Phoenix. (602) 555-0192</div>
-                </div>
-
-                <div class="chat-row chat-row--ai">
-                  <span class="chat-avatar" aria-hidden="true">AI</span>
-                  <div class="chat-bubble-msg">
-                    Got it, Mike. We have a tech available first thing tomorrow at 7am. Shall I confirm that for you? 🔧
-                  </div>
-                </div>
-
-                <div class="chat-status-row">
-                  <span class="chip chip--active chip--sm">Lead captured · 11:04 PM</span>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- AI Features -->
-          <div class="ai-features">
-            <div class="ai-feature">
-              <div class="icon-tile icon-tile--dark" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <h3 class="ai-feature__title">24/7 availability.</h3>
-                <p class="ai-feature__desc">Captures leads at midnight, on weekends, and during busy season when you're too slammed to pick up.</p>
-              </div>
-            </div>
-            <div class="ai-feature">
-              <div class="icon-tile icon-tile--dark" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-              </div>
-              <div>
-                <h3 class="ai-feature__title">Instant booking.</h3>
-                <p class="ai-feature__desc">Qualifies the job, collects contact info, and books a time on your calendar — all without you lifting a finger.</p>
-              </div>
-            </div>
-            <div class="ai-feature">
-              <div class="icon-tile icon-tile--dark" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              </div>
-              <div>
-                <h3 class="ai-feature__title">Every lead tracked.</h3>
-                <p class="ai-feature__desc">Every conversation lands in your CRM with a notification. Nothing slips through the cracks.</p>
-              </div>
-            </div>
-            <div class="ai-feature">
-              <div class="icon-tile icon-tile--dark" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <h3 class="ai-feature__title">Emergency 24/7 badge.</h3>
-                <p class="ai-feature__desc">We display your after-hours availability front and centre — the detail that wins you the 9pm call.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         9. SOCIAL PROOF
-    ══════════════════════════════════════ -->
-    <section class="section section--dark section--no-top" id="social-proof" aria-labelledby="proof-headline" data-animate>
-      <div class="container">
-        <p class="kicker">— SOCIAL PROOF</p>
-        <h2 class="h2 h2--white" id="proof-headline">
-          Real results from growing trade businesses.
-        </h2>
-        <div class="testimonial-grid" role="list">
-
-          <!-- PLACEHOLDER: Replace with real client testimonial 1 -->
-          <article class="testimonial" role="listitem">
-            <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial__quote">
-              "We went from 3 calls a week to over 20 in the first month. The AI chat alone paid for six months of service. I was skeptical — now I tell every trade owner I know."
-            </blockquote>
-            <div class="testimonial__author">
-              <div class="testimonial__avatar" style="--avatar-bg: #ED1C24;" aria-hidden="true">JR</div>
-              <div>
-                <p class="testimonial__name"><!-- PLACEHOLDER: Client full name --></p>
-                <p class="testimonial__company"><!-- PLACEHOLDER: Business name · Phoenix, AZ --></p>
-              </div>
-            </div>
-          </article>
-
-          <!-- PLACEHOLDER: Replace with real client testimonial 2 -->
-          <article class="testimonial" role="listitem">
-            <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial__quote">
-              "My old site was slow and embarrassing. The new one was live the next morning. First week we booked four emergency calls we would have lost. It paid for itself on day two."
-            </blockquote>
-            <div class="testimonial__author">
-              <div class="testimonial__avatar" style="--avatar-bg: #2563EB;" aria-hidden="true">MS</div>
-              <div>
-                <p class="testimonial__name"><!-- PLACEHOLDER: Client full name --></p>
-                <p class="testimonial__company"><!-- PLACEHOLDER: Business name · Denver, CO --></p>
-              </div>
-            </div>
-          </article>
-
-          <!-- PLACEHOLDER: Replace with real client testimonial 3 -->
-          <article class="testimonial" role="listitem">
-            <div class="testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial__quote">
-              "I've been burned by three agencies. 911 Websites showed me the site before I signed anything. That's what built the trust. Haven't looked back since."
-            </blockquote>
-            <div class="testimonial__author">
-              <div class="testimonial__avatar" style="--avatar-bg: #059669;" aria-hidden="true">DL</div>
-              <div>
-                <p class="testimonial__name"><!-- PLACEHOLDER: Client full name --></p>
-                <p class="testimonial__company"><!-- PLACEHOLDER: Business name · Austin, TX --></p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         10. GO FURTHER
-    ══════════════════════════════════════ -->
-    <section class="section section--light" id="go-further" aria-labelledby="further-headline" data-animate>
-      <div class="container">
-        <p class="kicker kicker--dark">— GO FURTHER</p>
-        <h2 class="h2" id="further-headline">Need more than just a website?</h2>
-        <p class="body-lg">
-          Every 911 Websites client gets a fast, lead-generating foundation. When you're ready to grow faster, add any of these — one flat add-on fee, no agency retainer, no long-term lock-in.
-        </p>
-        <div class="addons-grid" role="list">
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <h3 class="addon-card__title">AI Phone Receptionist</h3>
-            <p class="addon-card__desc">Answers calls, qualifies jobs, and books appointments — even when your team is out on a job.</p>
-          </article>
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3 class="addon-card__title">CRM</h3>
-            <p class="addon-card__desc">Every lead, quote, and booked job in one place — no more lost sticky notes or forgotten follow-ups.</p>
-          </article>
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <h3 class="addon-card__title">Google Reviews Management</h3>
-            <p class="addon-card__desc">Automated review requests after every job. More stars, higher ranking, more calls.</p>
-          </article>
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </div>
-            <h3 class="addon-card__title">Social Media Management</h3>
-            <p class="addon-card__desc">We post for you — job highlights, team photos, seasonal promos — so you stay visible without the hassle.</p>
-          </article>
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h3 class="addon-card__title">Blog &amp; SEO Content</h3>
-            <p class="addon-card__desc">Monthly articles that rank for "AC repair near me" and send you organic traffic year-round.</p>
-          </article>
-
-          <article class="addon-card" role="listitem">
-            <div class="icon-tile icon-tile--light" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <h3 class="addon-card__title">Newsletters &amp; SMS</h3>
-            <p class="addon-card__desc">Seasonal tune-up reminders and offers that keep past customers calling and your calendar full.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         11. PHOTO BREAK
-    ══════════════════════════════════════ -->
-    <section class="section section--photo-break" id="photo-break" aria-labelledby="photo-headline" data-animate>
-      <div class="container">
-        <h2 class="h2 h2--white display-xl" id="photo-headline">
-          Your crew does the work.<br>
-          <em class="red">We bring the jobs.</em>
-        </h2>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         12. FAQ
-    ══════════════════════════════════════ -->
-    <section class="section section--light" id="faq" aria-labelledby="faq-headline" data-animate>
-      <div class="container container--narrow">
-        <p class="kicker kicker--dark">— FAQ</p>
-        <h2 class="h2" id="faq-headline">Got questions? <em class="red-text">Good.</em></h2>
-
-        <div class="faq-list">
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq1">
-              How much does it cost?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq1" hidden>
-              <p>There's no setup fee and no design charge — your new site is built at zero upfront cost. If you love it, you pay one flat monthly fee that covers hosting, ongoing edits, maintenance, AI lead capture, and support. No contracts. Cancel any time. We don't list pricing here because we tailor it to your business — but the goal is simple: your site should pay for itself with a single booked job.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq2">
-              What's the process?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq2" hidden>
-              <p>Fill out the form below. We reach out within a few hours, learn about your business — your services, your area, what you want customers to do first when they land on your site. Within 24 hours, you get a fully built, mobile-first website to review. If you approve it, we go live. If you want changes, we make them. No payment until you're happy.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq3">
-              Is there a contract?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq3" hidden>
-              <p>No. We operate month to month. If you decide 911 Websites isn't the right fit, cancel anytime. We're confident you'll stay because the results speak for themselves — but we'd rather earn your business every month than lock you in with fine print.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq4">
-              What if I don't like the redesign?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq4" hidden>
-              <p>You walk away. No invoice, no hard feelings. We'll ask for quick feedback so we understand what missed the mark, but there's zero pressure. The free redesign is a real offer — not a bait-and-switch. We believe once you see what a fast, clean, mobile-first site looks like for your business, you'll want to keep it. But the choice is completely yours.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq5">
-              What does the AI actually do?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq5" hidden>
-              <p>The AI chat on your site handles incoming inquiries around the clock. It greets visitors, asks about their problem, collects their name and contact info, and — depending on your setup — books directly into your calendar. Every lead lands in your CRM and sends you an instant notification. Think of it as a receptionist that never calls in sick, works overnight, and costs a fraction of a part-timer.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq6">
-              How real is "live in 24 hours"?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-a" id="faq6" hidden>
-              <p>Very real. For most clients, we deliver a review-ready site within 24 hours of our intake call. We've built dozens of trade sites and know exactly what converts for HVAC, plumbing, electrical, and roofing businesses. The only thing that slows it down is waiting on content or feedback from you — and even then, we move fast.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         13. FINAL CTA
-    ══════════════════════════════════════ -->
-    <section class="section section--dark final-cta" id="final-cta" aria-labelledby="finalcta-headline" data-animate>
-      <div class="container container--narrow final-cta__inner">
-        <p class="kicker">BUILT FOR HVAC &amp; SKILLED TRADES</p>
-        <h2 class="h2 h2--white" id="finalcta-headline">
-          Hassle-free. <em class="red">Results guaranteed.</em>
-        </h2>
-        <p class="body-lg body-lg--grey">
-          A new site in 24 hours. One flat monthly fee. AI lead capture from day one. No setup fees, no contracts, and a money-back guarantee. You've got nothing to lose — and a full calendar to gain.
-        </p>
-        <div class="amber-pill" role="note">
-          <span aria-hidden="true">🔒</span> Free redesign · No setup fee · Money-back guarantee
-        </div>
-        <a href="#claim" class="btn btn--red btn--lg">Claim your free redesign →</a>
-        <p class="microcopy microcopy--grey">No credit card required · Live in 24 hours or less</p>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════
-         14. CLAIM FORM
-    ══════════════════════════════════════ -->
-    <section class="section section--dark claim-section" id="claim" aria-labelledby="claim-headline" data-animate>
-      <div class="container container--narrow">
-        <p class="kicker">— START HERE</p>
-        <h2 class="h2 h2--white" id="claim-headline">Claim your free redesign.</h2>
-        <p class="body-lg body-lg--grey">Fill this out and we'll build your new site within 24 hours. No payment required.</p>
 
         <!--
-          TODO: Replace the action URL with your Formspree endpoint.
-          1. Go to https://formspree.io and create a free account.
-          2. Create a new form — copy your form ID (looks like: xpwzabcd).
-          3. Replace YOUR_FORM_ID below with your actual form ID.
-          Example: action="https://formspree.io/f/xpwzabcd"
+          TODO: replace YOUR_FORM_ID with your Formspree form ID.
+          1. Create a free form at https://formspree.io
+          2. Copy the form ID (e.g. xpwzabcd)
+          3. Set action="https://formspree.io/f/xpwzabcd"
         -->
-        <form
-          class="lead-form"
-          id="leadForm"
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST"
-          novalidate
-          aria-label="Free redesign request form">
-
-          <div class="form-group">
-            <label class="form-label" for="fullName">
-              Full name <span class="form-required" aria-hidden="true">*</span>
-            </label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              class="form-input"
-              placeholder="Mike Torres"
-              required
-              autocomplete="name"
-              aria-required="true"
-              aria-describedby="fullName-error" />
-            <span class="form-field-error" id="fullName-error" role="alert" aria-live="polite"></span>
+        <form class="form" id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate aria-label="Free redesign request">
+          <div class="field">
+            <label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Mike Torres" required autocomplete="name" aria-required="true" aria-describedby="e-fullName" />
+            <span class="field__err" id="e-fullName" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel" aria-required="true" aria-describedby="e-phone" />
+            <span class="field__err" id="e-phone" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="business">Business name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="business" name="business" placeholder="Arctic Air HVAC" required autocomplete="organization" aria-required="true" aria-describedby="e-business" />
+            <span class="field__err" id="e-business" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="city">City <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Phoenix, AZ" required autocomplete="address-level2" aria-required="true" aria-describedby="e-city" />
+            <span class="field__err" id="e-city" role="alert" aria-live="polite"></span>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="phone">
-              Phone <span class="form-required" aria-hidden="true">*</span>
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              class="form-input"
-              placeholder="(555) 000-0000"
-              required
-              autocomplete="tel"
-              aria-required="true"
-              aria-describedby="phone-error" />
-            <span class="form-field-error" id="phone-error" role="alert" aria-live="polite"></span>
+          <input type="hidden" name="_subject" value="New free redesign request, 911 Websites" />
+          <!-- Honeypot: bots fill this, Formspree drops them -->
+          <div class="hp" aria-hidden="true">
+            <label for="company_url">Leave this empty</label>
+            <input type="text" id="company_url" name="_gotcha" tabindex="-1" autocomplete="off" />
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="businessName">
-              Business name <span class="form-required" aria-hidden="true">*</span>
-            </label>
-            <input
-              type="text"
-              id="businessName"
-              name="businessName"
-              class="form-input"
-              placeholder="Arctic Air HVAC"
-              required
-              autocomplete="organization"
-              aria-required="true"
-              aria-describedby="businessName-error" />
-            <span class="form-field-error" id="businessName-error" role="alert" aria-live="polite"></span>
-          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg" id="submitBtn">Get my free redesign</button>
+          <p class="form__legal">By submitting, you agree to be contacted about your free website redesign. No spam, ever.</p>
 
-          <div class="form-group">
-            <label class="form-label" for="city">
-              City <span class="form-required" aria-hidden="true">*</span>
-            </label>
-            <input
-              type="text"
-              id="city"
-              name="city"
-              class="form-input"
-              placeholder="Phoenix, AZ"
-              required
-              autocomplete="address-level2"
-              aria-required="true"
-              aria-describedby="city-error" />
-            <span class="form-field-error" id="city-error" role="alert" aria-live="polite"></span>
-          </div>
-
-          <input type="hidden" name="_subject" value="New free redesign request — 911 Websites" />
-
-          <!-- Honeypot: hidden from humans, bots fill it in → Formspree silently drops the spam. -->
-          <div class="hp-field" aria-hidden="true">
-            <label for="company_website">Leave this field empty</label>
-            <input type="text" id="company_website" name="_gotcha" tabindex="-1" autocomplete="off" />
-          </div>
-
-          <button type="submit" class="btn btn--red btn--lg btn--full" id="submitBtn">
-            Get my free redesign →
-          </button>
-
-          <p class="form-legal">By submitting, you agree to be contacted about your free website redesign. No spam, no pressure. Ever.</p>
-
-          <div class="form-msg form-success" id="formSuccess" hidden role="alert" aria-live="polite">
-            Got it — we'll reach out within a few hours to get started on your redesign.
-          </div>
-          <div class="form-msg form-error-msg" id="formError" hidden role="alert" aria-live="polite">
-            Something went wrong. Please call us at
-            <a href="tel:+15559110000">(555) 911-SITE</a> or try again.<!-- TODO: Update phone number -->
-          </div>
-
+          <div class="form__msg form__msg--ok" id="okMsg" hidden role="alert" aria-live="polite">Got it. We will reach out within a few hours to start your redesign.</div>
+          <div class="form__msg form__msg--err" id="errMsg" hidden role="alert" aria-live="polite">Something went wrong. Please call <a href="tel:+15559110000">(555) 911-SITE</a> or try again.</div><!-- TODO: real phone -->
         </form>
       </div>
     </section>
 
   </main>
 
-  <!-- ══════════════════════════════════════
-       15. FOOTER
-  ══════════════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-    <div class="container footer__top">
-
+    <div class="wrap footer__top">
       <div class="footer__brand">
-        <a href="/" class="logo logo--sm" aria-label="911 Websites home">
-          <div class="logo__squares" aria-hidden="true">
-            <span class="logo__sq">9</span>
-            <span class="logo__sq">1</span>
-            <span class="logo__sq">1</span>
-          </div>
-          <span class="logo__word">WEBSITES</span>
+        <a href="/" class="logo" aria-label="911 Websites, home">
+          <span class="logo__sq-group" aria-hidden="true">
+            <span class="logo__sq">9</span><span class="logo__sq">1</span><span class="logo__sq">1</span>
+          </span>
+          <span class="logo__word">Websites</span>
         </a>
-        <p class="footer__tagline">Fast, mobile-first websites + AI lead capture for HVAC and skilled trades.</p>
-        <p class="footer__guarantee"><span aria-hidden="true">✓</span> Money-back guarantee on every site.</p>
+        <p>Fast websites and AI lead capture, built for HVAC and skilled trades. Money-back guarantee on every site.</p>
       </div>
-
-      <nav class="footer__nav" aria-label="Footer links">
-        <a href="#what-we-build">What We Build</a>
-        <a href="#the-offer">The Offer</a>
-        <a href="#social-proof">Results</a>
-        <a href="#go-further">Add-ons</a>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#build">What you get</a>
+        <a href="#offer">The offer</a>
+        <a href="#proof">Results</a>
+        <a href="#addons">Add-ons</a>
         <a href="#faq">FAQ</a>
-        <a href="#claim">Get Free Redesign</a>
+        <a href="#claim">Free redesign</a>
       </nav>
-
       <div class="footer__contact">
-        <!-- TODO: Replace with real phone number -->
+        <!-- TODO: real phone -->
         <a href="tel:+15559110000" class="footer__phone">(555) 911-SITE</a>
-        <!-- TODO: Replace with real email address -->
-        <a href="mailto:hello@911websites.com" class="footer__email">hello@911websites.com</a>
+        <!-- TODO: real email -->
+        <a href="mailto:hello@911websites.com">hello@911websites.com</a>
       </div>
-
     </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p>
-          &copy; <span id="year"></span> 911 Websites. All rights reserved.
-          <!-- TODO: Confirm domain -->
-          <a href="https://911websites.com">911websites.com</a>
-        </p>
-      </div>
+    <div class="footer__bottom wrap">
+      <p>&copy; <span id="year"></span> 911 Websites. All rights reserved. <a href="https://911websites.com">911websites.com</a></p><!-- TODO: confirm domain -->
     </div>
   </footer>
 
