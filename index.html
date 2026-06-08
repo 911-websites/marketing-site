@@ -744,6 +744,12 @@
 
           <input type="hidden" name="_subject" value="New free redesign request — 911 Websites" />
 
+          <!-- Honeypot: hidden from humans, bots fill it in → Formspree silently drops the spam. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company_website">Leave this field empty</label>
+            <input type="text" id="company_website" name="_gotcha" tabindex="-1" autocomplete="off" />
+          </div>
+
           <button type="submit" class="btn btn--red btn--lg btn--full" id="submitBtn">
             Get my free redesign →
           </button>

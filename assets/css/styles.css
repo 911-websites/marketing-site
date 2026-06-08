@@ -1364,6 +1364,15 @@ sup { font-size: 0.45em; vertical-align: super; }
 }
 .footer__bottom a:hover { color: rgba(255,255,255,0.6); }
 
+/* ── HONEYPOT (spam trap — visually + AT hidden) ──── */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* ── SKIP LINK (accessibility) ───────────────────── */
 .skip-link {
   position: absolute;
