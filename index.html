@@ -3,491 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>911 Websites - Fast websites and AI lead capture for HVAC and trades</title>
-  <meta name="description" content="911 Websites builds fast, mobile-first websites with AI lead capture for HVAC and skilled-trade businesses. Free redesign in 24 hours. No setup fee. No contracts." />
+  <title data-i18n="home.meta.title">911 Websites, positioning lab</title>
+  <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#0A0A0A" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="911 Websites - Built for skilled trades" />
-  <meta property="og:description" content="Turn trade site visitors into booked jobs. Free redesign in 24 hours, AI lead capture included, no contracts." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://911websites.com" /><!-- TODO: update domain -->
-  <meta property="og:image" content="https://911websites.com/assets/og-image.jpg" /><!-- TODO: add a 1200x630 OG image -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="911 Websites - Fast sites for HVAC and trades" />
-  <meta name="twitter:description" content="Free redesign in 24 hours. AI lead capture. No contracts. Built for trade businesses." />
-
-  <!-- Favicon: the 911 logo, recreated as SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 18'%3E%3Crect x='0' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='7.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E9%3C/text%3E%3Crect x='18.5' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='26' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3Crect x='37' y='0' width='15' height='18' rx='4' fill='%23ED1C24'/%3E%3Ctext x='44.5' y='13.5' font-family='Arial Black,Arial' font-size='12' font-weight='900' text-anchor='middle' fill='white'%3E1%3C/text%3E%3C/svg%3E" />
 
-  <!-- Google Fonts: Bricolage Grotesque (display) + Hanken Grotesk (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body data-page="home">
 
-  <a href="#main" class="skip">Skip to content</a>
-
-  <!-- NAV -->
-  <header class="nav" id="nav" role="banner">
-    <div class="nav__inner wrap">
-      <a href="/" class="logo" aria-label="911 Websites, home">
+  <main class="selector wrap">
+    <div class="selector__top">
+      <a href="/" class="logo" aria-label="911 Websites">
         <span class="logo__sq-group" aria-hidden="true">
-          <span class="logo__sq">9</span>
-          <span class="logo__sq">1</span>
-          <span class="logo__sq">1</span>
+          <span class="logo__sq">9</span><span class="logo__sq">1</span><span class="logo__sq">1</span>
         </span>
         <span class="logo__word">Websites</span>
       </a>
-
-      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#build">What you get</a>
-        <a href="#offer">The offer</a>
-        <a href="#proof">Results</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <a href="#claim" class="btn btn--primary nav__cta" style="min-height:44px;padding:11px 22px;font-size:0.9375rem;">Get free redesign</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
     </div>
-  </header>
 
-  <main id="main">
+    <p class="kicker" data-i18n="home.kicker">Internal page</p>
+    <h1 class="display" data-i18n="home.h1">Two angles. One test.</h1>
+    <p class="lead" data-i18n="home.lead">Each page stands alone. Send prospects straight to a variant; this page is only for comparing them.</p>
 
-    <!-- HERO -->
-    <section class="section hero" aria-labelledby="hero-title">
-      <div class="wrap hero__grid">
-        <div class="hero__copy" data-reveal>
-          <p class="kicker">Built for skilled trades</p>
-          <h1 class="mega hero__title" id="hero-title">
-            <span class="line">Turn your
-              <span class="trade" id="trade" aria-live="polite">HVAC</span>
-            </span>
-            <span class="line">site into your <span class="accent">best closer.</span></span>
-          </h1>
-          <p class="lead hero__lead">
-            We build fast, mobile-first websites for trade businesses, with an AI assistant that answers, qualifies, and books leads around the clock. When the furnace quits at 9pm, the company that looks ready gets the call.
-          </p>
-          <div class="hero__actions">
-            <a href="#claim" class="btn btn--primary btn--lg">
-              Claim your free redesign
-              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-            <a href="#build" class="btn btn--ghost btn--lg">See what you get</a>
-          </div>
-          <p class="hero__micro">No setup fee. No contracts. Money-back guaranteed.</p>
+    <div class="choices">
+      <a class="choice" href="/website">
+        <span class="choice__tag" data-i18n="home.a.tag">Variant A</span>
+        <h2 class="h2" data-i18n="home.a.title">The Website</h2>
+        <p data-i18n="home.a.desc">Lead with the site: be found, look solid, capture requests. Starter tier featured.</p>
+        <span class="choice__go">
+          <span data-i18n="home.a.cta">View /website</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
 
-          <ul class="trust">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              Live in 24 hours
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4-3 7.5-7 8.5C8 18.5 5 15 5 11V6z"/><path d="M9 11.5l2 2 4-4.5"/></svg>
-              Money-back guarantee
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
-              Mobile-first
-            </li>
-          </ul>
-        </div>
-
-        <!-- Live AI chat: a real animated component (not a fake browser) -->
-        <aside class="chatcard" data-reveal aria-label="Example of the AI assistant booking an after-hours job">
-          <div class="chatcard__head">
-            <span class="chatcard__avatar" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <div>
-              <div class="chatcard__who">Air Care Experts assistant</div>
-              <div class="chatcard__status"><span class="live-dot" aria-hidden="true"></span> Answering now, 11:04 PM</div>
-            </div>
-          </div>
-          <div class="chatcard__feed" id="chatFeed" role="log" aria-label="Example conversation">
-            <!-- messages injected by JS for the live-typing effect; static fallback below -->
-            <noscript>
-              <div class="msg msg--ai" style="opacity:1;transform:none;">Hi, need service today? I can book you in right now.</div>
-              <div class="msg msg--user" style="opacity:1;transform:none;">My AC just died and it is 11pm.</div>
-              <div class="msg msg--ai" style="opacity:1;transform:none;">Got it. A tech can be there at 7am. Want me to lock it in?</div>
-            </noscript>
-          </div>
-          <div class="chatcard__captured" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Lead captured and sent to your phone
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- STAKES -->
-    <section class="section stakes" aria-labelledby="stakes-title" data-reveal>
-      <div class="wrap stakes__grid">
-        <div class="stakes__numberblock">
-          <div class="stakes__stat">53<sup>%</sup></div>
-          <p class="stakes__statlabel">of people leave a site on their phone if it takes more than three seconds to load.</p>
-        </div>
-        <div class="stakes__story">
-          <p class="kicker">The 9pm moment</p>
-          <h2 class="h2" id="stakes-title">A pipe bursts. They grab their phone and start <span class="accent">tapping.</span></h2>
-          <p class="lead">They are not reading reviews yet. They are scanning sites, fast. The first one that loads quick, looks sharp, and makes it easy to book wins the job. Your crew is ready. The only question is whether your website is.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENTO: what you get -->
-    <section class="section" id="build" aria-labelledby="build-title" data-reveal>
-      <div class="wrap">
-        <p class="kicker">What you get</p>
-        <h2 class="h2" id="build-title">A website built to <span class="accent">win the call.</span></h2>
-
-        <div class="bento stagger">
-          <!-- Feature tile -->
-          <article class="tile tile--feature">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <p class="tile__big">An AI assistant that books jobs while you are on a roof.</p>
-            <p>It greets every visitor, answers common questions, qualifies the job, and books the appointment. Day or night, busy season or slow. Every lead lands on your phone, ready to go.</p>
-            <div class="tile__chips">
-              <span class="minichip">Answers 24/7</span>
-              <span class="minichip">Qualifies the job</span>
-              <span class="minichip">Books the appointment</span>
-            </div>
-          </article>
-
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </span>
-            <h3 class="h3">Mobile-first design</h3>
-            <p>Built for the phone in your customer's hand, where almost every emergency search starts.</p>
-          </article>
-
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </span>
-            <h3 class="h3">Sub-second speed</h3>
-            <p>Loads faster than the competition, so visitors stay on your page instead of bouncing to theirs.</p>
-          </article>
-
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </span>
-            <h3 class="h3">Local SEO</h3>
-            <p>Set up to show up when someone nearby searches for your trade in your service area.</p>
-          </article>
-
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg>
-            </span>
-            <h3 class="h3">Review generation</h3>
-            <p>Automatic follow-ups after each job turn happy customers into Google reviews, with no chasing.</p>
-          </article>
-
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
-            </span>
-            <h3 class="h3">Lead dashboard</h3>
-            <p>Every inquiry, call, and booking in one simple place built for how trade businesses work.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- NUMBERS: the one red moment -->
-    <section class="section numbers" aria-labelledby="numbers-title" data-reveal>
-      <div class="wrap">
-        <p class="kicker kicker--on-red">The case</p>
-        <h2 class="h2" id="numbers-title">Your website should pay for itself.</h2>
-        <div class="numbers__grid stagger" role="list">
-          <div class="numbers__item" role="listitem">
-            <div class="numbers__n">3<sup>s</sup></div>
-            <p>People decide whether to trust you online in about three seconds. Your site gets one shot.</p>
-          </div>
-          <div class="numbers__item" role="listitem">
-            <div class="numbers__n">53<sup>%</sup></div>
-            <p>leave a slow page on mobile before it even loads. That is a job handed to the next number on the list.</p>
-          </div>
-          <div class="numbers__item" role="listitem">
-            <div class="numbers__n">2<sup>x</sup></div>
-            <p>Mobile-first sites convert far better than desktop-first ones. Same traffic, more booked work.</p>
-          </div>
-          <div class="numbers__item" role="listitem">
-            <div class="numbers__n">1</div>
-            <p>One booked emergency call covers your whole monthly fee. Everything after that is profit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OFFER: numbered steps -->
-    <section class="section" id="offer" aria-labelledby="offer-title" data-reveal>
-      <div class="wrap">
-        <div class="offer__head">
-          <p class="kicker">The offer</p>
-          <h2 class="h2" id="offer-title">We rebuild your site for free. You decide if you keep it.</h2>
-          <p class="lead">No risk, no upfront cost, no pressure. Here is exactly how it works.</p>
-        </div>
-
-        <ol class="steps stagger">
-          <li class="step">
-            <span class="step__n" aria-hidden="true">1</span>
-            <div>
-              <h3 class="h3">You tell us about the business</h3>
-              <p>A short call to learn your trade, your service area, and what you want customers to do first when they land on your site.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">2</span>
-            <div>
-              <h3 class="h3">We build it in 24 hours</h3>
-              <p>A brand-new, mobile-first site with AI lead capture built in, ready for you to review. You pay nothing to see it.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">3</span>
-            <div>
-              <h3 class="h3">You keep it, or you walk away</h3>
-              <p>Love it, and one flat monthly fee covers hosting, edits, maintenance, AI lead capture, and support. Not for you? No invoice, no hard feelings.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="offer__guarantee">
-          <p>No setup fee. No long contracts. A money-back guarantee on every site. AI lead capture is built into all of them, and if it does not bring in more leads, we make it right.</p>
-          <a href="#claim" class="btn btn--primary btn--lg">
-            Claim your free redesign
-            <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROOF -->
-    <section class="section section--seam" id="proof" aria-labelledby="proof-title" data-reveal>
-      <div class="wrap">
-        <p class="kicker">Results</p>
-        <h2 class="h2" id="proof-title">Trade owners who stopped losing the call.</h2>
-
-        <div class="proof__grid stagger">
-          <!-- PLACEHOLDER: replace with a real client quote -->
-          <article class="quote quote--feature">
-            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="quote__text">"We went from three calls a week to over twenty in the first month. The AI chat alone paid for half a year of service. I tell every trade owner I know."</p>
-            <div class="quote__by">
-              <span class="quote__avatar" style="--av:#ED1C24;" aria-hidden="true">JR</span>
-              <div>
-                <p class="quote__name"><span class="ph-name"></span></p>
-                <p class="quote__role"><span class="ph-role"></span></p>
-              </div>
-            </div>
-          </article>
-
-          <!-- PLACEHOLDER: replace with a real client quote -->
-          <article class="quote">
-            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="quote__text">"My old site was slow and embarrassing. The new one was live the next morning, and we booked four emergency calls that first week we would have lost."</p>
-            <div class="quote__by">
-              <span class="quote__avatar" style="--av:#2563EB;" aria-hidden="true">MS</span>
-              <div>
-                <p class="quote__name"><span class="ph-name"></span></p>
-                <p class="quote__role"><span class="ph-role"></span></p>
-              </div>
-            </div>
-          </article>
-
-          <!-- PLACEHOLDER: replace with a real client quote -->
-          <article class="quote">
-            <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="quote__text">"Three agencies burned me before. These guys showed me the finished site before I paid a cent. That is what earned the trust."</p>
-            <div class="quote__by">
-              <span class="quote__avatar" style="--av:#0E9F6E;" aria-hidden="true">DL</span>
-              <div>
-                <p class="quote__name"><span class="ph-name"></span></p>
-                <p class="quote__role"><span class="ph-role"></span></p>
-              </div>
-            </div>
-          </article>
-        </div>
-        <p class="muted" style="margin-top:24px;font-size:0.8125rem;">Quotes shown are placeholders. Real client results coming soon.</p>
-      </div>
-    </section>
-
-    <!-- ADD-ONS -->
-    <section class="section" id="addons" aria-labelledby="addons-title" data-reveal>
-      <div class="wrap">
-        <div class="addons__head">
-          <p class="kicker">Go further</p>
-          <h2 class="h2" id="addons-title">Add more when you are ready.</h2>
-          <p class="lead">Every site starts as a fast, lead-getting foundation. Bolt on what you need, one flat fee, no agency retainer.</p>
-        </div>
-
-        <div class="addon-grid stagger">
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg></span>
-            <div><h3>AI phone receptionist</h3><p>Answers calls, qualifies jobs, and books work, even when the whole crew is out.</p></div>
-          </div>
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></span>
-            <div><h3>CRM</h3><p>Every lead, quote, and job in one place. No more lost sticky notes.</p></div>
-          </div>
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg></span>
-            <div><h3>Google reviews</h3><p>Automatic review requests after each job. More stars, higher ranking, more calls.</p></div>
-          </div>
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
-            <div><h3>Social media</h3><p>We post for you, so you stay visible without the hassle of doing it yourself.</p></div>
-          </div>
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
-            <div><h3>Blog and SEO content</h3><p>Monthly articles that rank for local searches and bring in organic traffic.</p></div>
-          </div>
-          <div class="addon">
-            <span class="addon__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></span>
-            <div><h3>Newsletters and SMS</h3><p>Seasonal reminders and offers that keep past customers calling you back.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section--seam" id="faq" aria-labelledby="faq-title" data-reveal>
-      <div class="wrap faq">
-        <div class="faq__head">
-          <p class="kicker" style="justify-content:center;">FAQ</p>
-          <h2 class="h2" id="faq-title">Straight answers.</h2>
-        </div>
-
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a1">How much does it cost?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a1" hidden><p>There is no setup fee and no design charge. The redesign is free to see. If you keep it, you pay one flat monthly fee that covers hosting, edits, maintenance, AI lead capture, and support. We tailor the fee to your business, and the goal is simple: your site should pay for itself with a single booked job.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a2">What is the process?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a2" hidden><p>Fill out the form below. We reach out within a few hours to learn about your business, then build a full mobile-first site within 24 hours for you to review. Approve it and we go live. Want changes? We make them. You pay nothing until you are happy.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a3">Is there a contract?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a3" hidden><p>No. We work month to month. If we are not the right fit, cancel any time. We would rather earn your business every month than lock you in with fine print.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a4">What if I do not like the redesign?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a4" hidden><p>You walk away. No invoice, no pressure. We will ask for quick feedback so we know what missed, but the free redesign is a real offer, not a bait and switch.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a5">What does the AI actually do?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a5" hidden><p>The assistant on your site handles inquiries around the clock. It greets visitors, asks about the problem, collects their details, and books a time. Every lead lands in your dashboard with an instant notification. Think of it as a receptionist that never sleeps and costs a fraction of a part-timer.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="a6">Is "live in 24 hours" for real?<span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="a6" hidden><p>Yes. For most clients we deliver a review-ready site within 24 hours of the intake call. We have built dozens of trade sites and know what converts for HVAC, plumbing, electrical, and roofing. The only thing that slows it down is waiting on details from you.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CLAIM -->
-    <section class="section claim" id="claim" aria-labelledby="claim-title" data-reveal>
-      <div class="wrap claim__grid">
-        <div class="claim__pitch">
-          <p class="kicker">Start here</p>
-          <h2 class="display" id="claim-title">Claim your free <span class="accent">redesign.</span></h2>
-          <p class="lead">Tell us where to reach you and we will build your new site within 24 hours. No payment, no commitment.</p>
-          <span class="reassure">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-            Free redesign, no setup fee, live in 24 hours
-          </span>
-        </div>
-
-        <!--
-          TODO: replace YOUR_FORM_ID with your Formspree form ID.
-          1. Create a free form at https://formspree.io
-          2. Copy the form ID (e.g. xpwzabcd)
-          3. Set action="https://formspree.io/f/xpwzabcd"
-        -->
-        <form class="form" id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate aria-label="Free redesign request">
-          <div class="field">
-            <label for="fullName">Full name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="fullName" name="fullName" placeholder="Mike Torres" required autocomplete="name" aria-required="true" aria-describedby="e-fullName" />
-            <span class="field__err" id="e-fullName" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel" aria-required="true" aria-describedby="e-phone" />
-            <span class="field__err" id="e-phone" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="business">Business name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="business" name="business" placeholder="Arctic Air HVAC" required autocomplete="organization" aria-required="true" aria-describedby="e-business" />
-            <span class="field__err" id="e-business" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="city">City <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="city" name="city" placeholder="Phoenix, AZ" required autocomplete="address-level2" aria-required="true" aria-describedby="e-city" />
-            <span class="field__err" id="e-city" role="alert" aria-live="polite"></span>
-          </div>
-
-          <input type="hidden" name="_subject" value="New free redesign request, 911 Websites" />
-          <!-- Honeypot: bots fill this, Formspree drops them -->
-          <div class="hp" aria-hidden="true">
-            <label for="company_url">Leave this empty</label>
-            <input type="text" id="company_url" name="_gotcha" tabindex="-1" autocomplete="off" />
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full btn--lg" id="submitBtn">Get my free redesign</button>
-          <p class="form__legal">By submitting, you agree to be contacted about your free website redesign. No spam, ever.</p>
-
-          <div class="form__msg form__msg--ok" id="okMsg" hidden role="alert" aria-live="polite">Got it. We will reach out within a few hours to start your redesign.</div>
-          <div class="form__msg form__msg--err" id="errMsg" hidden role="alert" aria-live="polite">Something went wrong. Please call <a href="tel:+15559110000">(555) 911-SITE</a> or try again.</div><!-- TODO: real phone -->
-        </form>
-      </div>
-    </section>
-
+      <a class="choice" href="/reception">
+        <span class="choice__tag" data-i18n="home.b.tag">Variant B</span>
+        <h2 class="h2" data-i18n="home.b.title">The Dispatch Desk</h2>
+        <p data-i18n="home.b.desc">Lead with the calls: answered, qualified, summarized. Pro tier featured.</p>
+        <span class="choice__go">
+          <span data-i18n="home.b.cta">View /reception</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+    </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="wrap footer__top">
-      <div class="footer__brand">
-        <a href="/" class="logo" aria-label="911 Websites, home">
-          <span class="logo__sq-group" aria-hidden="true">
-            <span class="logo__sq">9</span><span class="logo__sq">1</span><span class="logo__sq">1</span>
-          </span>
-          <span class="logo__word">Websites</span>
-        </a>
-        <p>Fast websites and AI lead capture, built for HVAC and skilled trades. Money-back guarantee on every site.</p>
-      </div>
-      <nav class="footer__nav" aria-label="Footer">
-        <a href="#build">What you get</a>
-        <a href="#offer">The offer</a>
-        <a href="#proof">Results</a>
-        <a href="#addons">Add-ons</a>
-        <a href="#faq">FAQ</a>
-        <a href="#claim">Free redesign</a>
-      </nav>
-      <div class="footer__contact">
-        <!-- TODO: real phone -->
-        <a href="tel:+15559110000" class="footer__phone">(555) 911-SITE</a>
-        <!-- TODO: real email -->
-        <a href="mailto:hello@911websites.com">hello@911websites.com</a>
-      </div>
-    </div>
-    <div class="footer__bottom wrap">
-      <p>&copy; <span id="year"></span> 911 Websites. All rights reserved. <a href="https://911websites.com">911websites.com</a></p><!-- TODO: confirm domain -->
-    </div>
-  </footer>
-
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

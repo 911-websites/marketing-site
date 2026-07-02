@@ -1,82 +1,93 @@
-# 911 Websites — Marketing Site
+# 911 Websites, positioning A/B test
 
-Static single-page marketing site for [911 Websites](https://911websites.com) — fast, mobile-first websites + AI lead capture for HVAC and skilled-trade businesses.
+Bilingual (FR + EN) marketing site with **two standalone landing pages**, each defending a different positioning angle for 911 Websites, so they can be shown to prospects independently and compared.
+
+| Route | Variant | Angle | Featured tier |
+|---|---|---|---|
+| `/` | Internal selector | Compare both at a glance (noindex, not for prospects) | - |
+| `/website` | **A: The Website** | Be found, look solid, capture requests | Starter, $99/mo |
+| `/reception` | **B: The Dispatch Desk** | Calls answered, qualified, summarized; evenings back | Pro, $199/mo |
+
+Both variants share the same theme and components on purpose: the test isolates the **message**, not the design.
 
 ## Stack
 
-Plain HTML + CSS + vanilla JS. No build step, no framework, no dependencies beyond Google Fonts.
+Static HTML + vanilla CSS/JS. **Why:** zero build step and zero dependencies means it runs anywhere with one command, deploys to any static host for free, and nothing on these pages needs a framework.
 
-## Local development
+## Run locally
 
 ```bash
-# Any static file server works. Recommended:
 npx serve .
-
-# Or with Python:
-python3 -m http.server 8080
-
-# Or open index.html directly in a browser (smooth-scroll and fetch work fine over file://)
+# -> http://localhost:3000  (selector)
+# -> http://localhost:3000/website
+# -> http://localhost:3000/reception
 ```
 
-## Deploy to Vercel
+`serve` resolves clean URLs (`/website` -> `website.html`) the same way Vercel does. Python's `http.server` does not; use `serve`.
+
+## Deploy
 
 ```bash
-npm i -g vercel
-vercel
+npx vercel          # preview
+npx vercel --prod   # production
 ```
 
-Vercel auto-detects a static site (no framework). Root directory is `/`. The site deploys as-is — no build command needed.
+Or connect the Git repo to Vercel: every push deploys automatically (previews per branch, production on `main`). `vercel.json` already sets `cleanUrls` and security headers. Netlify or any static host also works; enable "pretty URLs" or add equivalent redirects.
 
-Alternatively: drag the project folder into [vercel.com/new](https://vercel.com/new).
+## Languages (FR / EN)
 
-## Before going live — fill these in
+- **All copy lives in [assets/js/i18n.js](assets/js/i18n.js)**: two dictionaries (`en`, `fr`), same keys. Edit there; the text inline in the HTML is only the no-JS fallback (mirror of `en`).
+- The FR/EN toggle in the header persists via `localStorage` and applies across pages. First visit defaults to the browser language.
+- French register: professional **vouvoiement**, Quebec vocabulary ("soumission", "infolettre"). If you target France instead, swap those terms in `i18n.js` (search "soumission" -> "devis", "infolettre" -> "newsletter").
 
-| Location | What to replace |
-|---|---|
-| `index.html` × 3 | `(555) 911-SITE` / `tel:+15559110000` → real phone |
-| `index.html` × 2 | `hello@911websites.com` → real email |
-| `index.html` × 2 | `https://911websites.com` → real domain in OG tags + footer |
-| `index.html` form `action` | `YOUR_FORM_ID` → Formspree form ID (see below) |
-| `index.html` testimonials | 3 × PLACEHOLDER blocks — add real name, company, city, quote |
-| `assets/js/main.js` line 1 | Footer year is set automatically |
+## Pricing (USD, shown on both variants)
 
-### Formspree setup (lead form)
+- **Starter $99/mo**: website + smart chat capture + Google Business profile
+- **Pro $199/mo**: Starter + voice assistant on the business line (after-hours only, or 24/7)
+- **Sales Ops $299/mo**: Pro + sales CRM
+- **Add-ons $49/mo each**: Google reviews, newsletters, SMS marketing, local SEO + blog, social media
 
-1. Create a free account at [formspree.io](https://formspree.io)
-2. Create a new form — copy the form ID (e.g. `xpwzabcd`)
-3. In `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"` and replace `YOUR_FORM_ID`
-4. Done. Submissions land in your Formspree dashboard and are forwarded to your email.
+Variant A features Starter ("Most popular"); Variant B features Pro ("Recommended").
 
-### OG image
+## Naming: the call-handling offer
 
-Add a 1200×630px image at `assets/og-image.jpg` and update the `og:image` meta tag.
+Applied on variant B: **EN "The Dispatch Desk" / FR "Le Standard"** (native trades vocabulary; says the function without saying "AI").
 
-## Lighthouse targets
+Alternatives to consider, pick and swap in `i18n.js` (`b.sol.title`, `b.f3.a`, `home.b.title`):
 
-- Performance: 95+
-- Accessibility: 95+
-- Best Practices: 100
-- SEO: 100
+| EN | FR | Note |
+|---|---|---|
+| Front Desk 24/7 | L'Accueil 24/7 | The original working title; clear but generic |
+| No Missed Calls | Zéro appel manqué | Benefit-as-name, doubles as a tagline |
+| The Answer Line | La Permanence | "Permanence téléphonique" is the established FR service category |
 
-The site uses semantic HTML, ARIA labels, skip link, 44px minimum tap targets, focus-visible states, and `prefers-reduced-motion` support. Contrast ratios: red (#ED1C24) on black passes WCAG AA at 4.55:1; red-deep (#C41019) on off-white passes at 5.34:1.
+## Measuring the test
 
-## File structure
+- Send prospects **directly** to `/website` or `/reception`. The selector `/` is noindex and never linked from the variants.
+- The demo form builds a **mailto to team@911websites.co** with a tagged subject (`[Website]` or `[Reception]`) plus the prospect's language, so every demo request self-identifies its variant with no tracking.
+- No third-party tracking, no API keys, no backend.
+
+## Placeholders to replace before showing widely
+
+- **Testimonials**: 3 per variant, marked "example testimonials" on the page (`a.q1.*` ... `b.q3.*` in `i18n.js`).
+- **OG images**: none yet; add 1200x630 images and `og:image` tags per variant.
+- **Domain**: `og:url` tags assume `911websites.co`; confirm.
+
+## Accessibility and performance
+
+Semantic landmarks, skip link, visible focus states, 44px+ touch targets, WCAG AA contrast (primary button bg `#E31A21` for 4.5:1 white text), `prefers-reduced-motion` honored, no external resources except Google Fonts.
+
+## Structure
 
 ```
-911-websites/
-├── index.html          # Single page — all 15 sections
+├── index.html          # Internal selector (noindex)
+├── website.html        # Variant A, served at /website
+├── reception.html      # Variant B, served at /reception
 ├── assets/
-│   ├── css/
-│   │   └── styles.css  # Design system tokens → mobile-first layout → breakpoints
+│   ├── css/styles.css  # Shared theme: tokens -> components -> sections
 │   └── js/
-│       └── main.js     # Trade pill rotation, nav, IntersectionObserver, FAQ, form
+│       ├── i18n.js     # ALL copy, EN + FR
+│       └── main.js     # Language manager, reveals, FAQ, form (mailto)
+├── vercel.json         # cleanUrls + security headers
 └── README.md
 ```
-
-## Deployment
-
-Auto-deployed from GitHub via Vercel Git integration.
-
-Last integration check: 2026-06-08T16:19:07Z
-
-Git integration active: 2026-06-08T16:26:18Z
