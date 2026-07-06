@@ -59,13 +59,13 @@
         <div class="hero__copy" data-reveal>
           <p class="kicker" data-i18n="b.hero.kicker">Call handling for the trades</p>
           <h1 class="display hero__title" id="hero-title" data-i18n-html="b.hero.title">The first company that answers <span class="accent">wins the job.</span></h1>
-          <p class="lead hero__lead" data-i18n="b.hero.sub">The Dispatch Desk answers when you're on a job: it qualifies the request, books the appointment, and hands you a clean summary at the end of the day. Your evenings are yours again.</p>
+          <p class="lead hero__lead" data-i18n="b.hero.sub">Your 24/7 receptionist answers when you're on a job: it qualifies the request, books the appointment, and hands you a clean summary at the end of the day. Your evenings are yours again.</p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn--primary btn--lg">
               <span data-i18n="c.cta.demo">Book a demo</span>
               <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="#pricing" class="btn btn--ghost btn--lg" data-i18n="c.cta.pricing">See pricing</a>
+            <a href="/demo" class="btn btn--ghost btn--lg" data-i18n="c.cta.example">See a live example</a>
           </div>
           <p class="hero__micro" data-i18n="b.hero.micro">From $199 per month, website included.</p>
 
@@ -76,7 +76,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4-3 7.5-7 8.5C8 18.5 5 15 5 11V6z"/><path d="M9 11.5l2 2 4-4.5"/></svg>
-              <span data-i18n="c.trust.2">Zero effort on your end</span>
+              <span data-i18n="c.trust.2">30-day money-back guarantee</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -126,36 +126,42 @@
       </div>
     </section>
 
-    <!-- PROBLEM -->
-    <section class="section section--seam" id="problem" aria-labelledby="problem-title" data-reveal>
-      <div class="wrap">
-        <div class="section__head">
+    <!-- CREDIBILITY (founder pedigree, text only, no logos) -->
+    <section class="cred" aria-label="Team experience" data-reveal>
+      <div class="wrap cred__inner">
+        <p class="cred__label" data-i18n="c.cred.label">Built by a team that ran digital campaigns for</p>
+        <ul class="cred__names">
+          <li>Home Depot</li>
+          <li>Lowe's</li>
+          <li>Castorama</li>
+          <li>General Motors</li>
+          <li>Chevrolet</li>
+          <li>Lexus</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROBLEM (editorial split, distinct from the tile grids) -->
+    <section class="section" id="problem" aria-labelledby="problem-title" data-reveal>
+      <div class="wrap probgrid">
+        <div>
           <p class="kicker" data-i18n="b.problem.kicker">The problem</p>
           <h2 class="h2" id="problem-title" data-i18n-html="b.problem.title">Twenty calls a day. <span class="accent">Two hours of callbacks every night.</span></h2>
-          <p class="lead" data-i18n="b.problem.lead">That is not a phone problem. That is a growth ceiling.</p>
+          <p class="lead" style="margin-top: var(--s5);" data-i18n="b.problem.lead">That is not a phone problem. That is a growth ceiling.</p>
         </div>
-        <div class="bento bento--three stagger">
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
-            </span>
+        <div class="pains stagger">
+          <div class="pain">
             <h3 class="h3" data-i18n="b.pain1.title">Every ring interrupts a job.</h3>
             <p data-i18n="b.pain1.desc">Answer, and the work stops. Ignore it, and it may have been the best contract of the month.</p>
-          </article>
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </span>
+          </div>
+          <div class="pain">
             <h3 class="h3" data-i18n="b.pain2.title">Every call sounds the same.</h3>
             <p data-i18n="b.pain2.desc">An emergency, a price shopper and a telemarketer ring the exact same way. You find out by picking up.</p>
-          </article>
-          <article class="tile">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9"/><polyline points="12 7 12 12 15 15"/><line x1="17" y1="21" x2="23" y2="21"/></svg>
-            </span>
+          </div>
+          <div class="pain">
             <h3 class="h3" data-i18n="b.pain3.title">The evening belongs to the callback list.</h3>
             <p data-i18n="b.pain3.desc">Returning calls and writing quotes after supper is unpaid office work. It is also family time.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -165,7 +171,7 @@
       <div class="wrap">
         <div class="section__head">
           <p class="kicker" data-i18n="b.sol.kicker">The solution</p>
-          <h2 class="h2" id="solution-title" data-i18n-html="b.sol.title">Meet <span class="accent">the Dispatch Desk.</span></h2>
+          <h2 class="h2" id="solution-title" data-i18n-html="b.sol.title">Meet <span class="accent">your 24/7 receptionist.</span></h2>
         </div>
         <div class="bento stagger">
           <article class="tile tile--feature">
@@ -253,18 +259,26 @@
       </div>
     </section>
 
-    <!-- PRICING (Pro featured) -->
-    <section class="section" id="pricing" aria-labelledby="pricing-title" data-reveal>
+    <!-- IMAGE BREAK -->
+    <section class="imgbreak" aria-label="Electrician at work, hands busy">
+      <img src="assets/img/electrician.jpg" alt="An electrician working on a panel with both hands busy" loading="lazy" />
+      <div class="wrap">
+        <h2 class="h2" data-i18n="b.break">You stay on the tools. We answer the phone.</h2>
+      </div>
+    </section>
+
+    <!-- PRICING (24/7 Receptionist featured) -->
+    <section class="section section--light" id="pricing" aria-labelledby="pricing-title" data-reveal>
       <div class="wrap">
         <div class="section__head">
           <p class="kicker" data-i18n="c.pricing.kicker">Pricing</p>
           <h2 class="h2" id="pricing-title" data-i18n="c.pricing.title">Simple pricing. No surprises.</h2>
-          <p class="lead" data-i18n="c.pricing.sub">In US dollars, billed monthly. No setup fee. Cancel anytime.</p>
+          <p class="lead" data-i18n-html="c.pricing.sub">Everything you need to be the best <span data-niche-token="town">trade business</span> in town.</p>
         </div>
 
         <div class="plans stagger">
-          <article class="plan" aria-label="Starter plan">
-            <h3 class="plan__name" data-i18n="c.plan1.name">Starter</h3>
+          <article class="plan" aria-label="Website plan">
+            <h3 class="plan__name" data-i18n="c.plan1.name">Website</h3>
             <div class="plan__price">$99<span data-i18n="c.per">/ month</span></div>
             <p class="plan__desc" data-i18n="c.plan1.desc">Everything you need to be found and trusted.</p>
             <ul class="plan__features">
@@ -275,25 +289,25 @@
             <a href="#contact" class="btn btn--ghost btn--full" data-i18n="c.cta.demo">Book a demo</a>
           </article>
 
-          <article class="plan plan--featured" aria-label="Pro plan, recommended">
+          <article class="plan plan--featured" aria-label="24/7 Receptionist plan, recommended">
             <span class="badge" data-i18n="c.badge.reco">Recommended</span>
-            <h3 class="plan__name" data-i18n="c.plan2.name">Pro</h3>
+            <h3 class="plan__name" data-i18n="c.plan2.name">24/7 Receptionist</h3>
             <div class="plan__price">$199<span data-i18n="c.per">/ month</span></div>
-            <p class="plan__desc" data-i18n="c.plan2.desc">Starter, plus your calls answered for you.</p>
+            <p class="plan__desc" data-i18n="c.plan2.desc">The website, plus your calls answered for you.</p>
             <ul class="plan__features">
-              <li data-i18n="c.plan2.f1">Everything in Starter</li>
+              <li data-i18n="c.plan2.f1">Everything in Website</li>
               <li data-i18n="c.plan2.f2">Voice assistant on your business line</li>
               <li data-i18n="c.plan2.f3">After-hours only, or around the clock</li>
             </ul>
             <a href="#contact" class="btn btn--primary btn--full" data-i18n="c.cta.demo">Book a demo</a>
           </article>
 
-          <article class="plan" aria-label="Sales Ops plan">
-            <h3 class="plan__name" data-i18n="c.plan3.name">Sales Ops</h3>
+          <article class="plan" aria-label="Sales CRM plan">
+            <h3 class="plan__name" data-i18n="c.plan3.name">Sales CRM</h3>
             <div class="plan__price">$299<span data-i18n="c.per">/ month</span></div>
-            <p class="plan__desc" data-i18n="c.plan3.desc">Pro, plus a clear view of every request.</p>
+            <p class="plan__desc" data-i18n="c.plan3.desc">The receptionist, plus a clear view of every request.</p>
             <ul class="plan__features">
-              <li data-i18n="c.plan3.f1">Everything in Pro</li>
+              <li data-i18n="c.plan3.f1">Everything in 24/7 Receptionist</li>
               <li data-i18n="c.plan3.f2">Sales CRM: every request tracked to a quote</li>
               <li data-i18n="c.plan3.f3">Follow-ups that never slip</li>
             </ul>
@@ -303,19 +317,30 @@
 
         <div class="addons">
           <p class="addons__title" data-i18n="c.addons.title">Add-ons. $49 per month each.</p>
-          <ul class="addons__list">
-            <li data-i18n="c.addons.1">Google reviews management</li>
-            <li data-i18n="c.addons.2">Newsletters</li>
-            <li data-i18n="c.addons.3">SMS marketing</li>
-            <li data-i18n="c.addons.4">Local SEO and blog</li>
-            <li data-i18n="c.addons.5">Social media management</li>
+          <ul class="addons__list stagger">
+            <li><span data-i18n="c.addons.1">Google reviews management</span><span class="addons__price">$49</span></li>
+            <li><span data-i18n="c.addons.2">Newsletters</span><span class="addons__price">$49</span></li>
+            <li><span data-i18n="c.addons.3">SMS marketing</span><span class="addons__price">$49</span></li>
+            <li><span data-i18n="c.addons.4">Local SEO and blog</span><span class="addons__price">$49</span></li>
+            <li><span data-i18n="c.addons.5">Social media management</span><span class="addons__price">$49</span></li>
           </ul>
+          <p class="pricing__note" data-i18n="c.pricing.note">Prices in USD, billed monthly. No setup fee. Save 10% paid annually.</p>
         </div>
       </div>
     </section>
 
+    <!-- GUARANTEE BAND -->
+    <section class="section guarantee" aria-labelledby="guar-title" data-reveal>
+      <div class="wrap">
+        <p class="kicker" data-i18n="c.guar.kicker">Our guarantee</p>
+        <h2 class="h2" id="guar-title" data-i18n="c.guar.title">Try it for 30 days. Love it, or get your money back.</h2>
+        <p class="guarantee__sub" data-i18n="c.guar.sub">A 30-day money-back guarantee on every plan, no questions asked. If it does not earn its keep, you pay nothing.</p>
+        <a href="#contact" class="btn btn--on-red btn--lg" data-i18n="c.cta.demo">Book a demo</a>
+      </div>
+    </section>
+
     <!-- PROOF -->
-    <section class="section section--seam" id="proof" aria-labelledby="proof-title" data-reveal>
+    <section class="section" id="proof" aria-labelledby="proof-title" data-reveal>
       <div class="wrap">
         <div class="section__head">
           <p class="kicker" data-i18n="c.proof.kicker">Results</p>
@@ -360,40 +385,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section" id="faq" aria-labelledby="faq-title" data-reveal>
-      <div class="wrap faq">
-        <div class="faq__head">
-          <p class="kicker" data-i18n="c.nav.faq">FAQ</p>
-          <h2 class="h2" id="faq-title" data-i18n="b.faq.title">Straight answers.</h2>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa1"><span data-i18n="b.f1.q">What do callers actually hear?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa1" hidden><p data-i18n="b.f1.a">A courteous, natural voice that answers in your company's name, asks what is going on and records the details, the way a good receptionist would. It is an assistant configured for your trade; most callers simply explain their problem.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa2"><span data-i18n="b.f2.q">What about real emergencies?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa2" hidden><p data-i18n="b.f2.a">You define the rules. Anything you flag as urgent is forwarded to your cell immediately. Everything else waits in the summary.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa3"><span data-i18n="b.f3.q">Can I still answer my own phone?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa3" hidden><p data-i18n="b.f3.a">Yes. The Dispatch Desk only takes what you don't. Many owners start with after-hours only.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa4"><span data-i18n="b.f4.q">Do I keep my number?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa4" hidden><p data-i18n="b.f4.a">Yes. We connect to your existing line. Your customers notice no difference.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa5"><span data-i18n="b.f5.q">How long is setup?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa5" hidden><p data-i18n="b.f5.a">One short call, running within 24 hours. Nothing to install on your side.</p></div>
-        </div>
-        <div class="qa">
-          <button class="qa__q" aria-expanded="false" aria-controls="qa6"><span data-i18n="b.f6.q">Is there a contract?</span><span class="qa__icon" aria-hidden="true"></span></button>
-          <div class="qa__a" id="qa6" hidden><p data-i18n="b.f6.a">Month to month. If it does not earn its keep, cancel anytime.</p></div>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
       <div class="wrap contact__grid">
@@ -401,6 +392,10 @@
           <p class="kicker" data-i18n="b.contact.kicker">Start here</p>
           <h2 class="display" id="contact-title" data-i18n-html="b.contact.title">Take your <span class="accent">evenings back.</span></h2>
           <p class="lead" data-i18n="b.contact.lead">A 15-minute demo. Hear how it answers, and see a real end-of-day summary.</p>
+          <span class="founding">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg>
+            <span data-i18n="b.contact.founding">Be one of our founding clients.</span>
+          </span>
           <ul class="trust" aria-label="Guarantees">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
@@ -431,6 +426,40 @@
           <button type="submit" class="btn btn--primary btn--full btn--lg" data-i18n="c.form.send">Request a demo</button>
           <p class="form__hint" data-i18n="c.form.hint">This opens your email app, addressed to team@911websites.co.</p>
         </form>
+      </div>
+    </section>
+
+    <!-- FAQ (below the CTA, per conversion feedback) -->
+    <section class="section" id="faq" aria-labelledby="faq-title" data-reveal>
+      <div class="wrap faq">
+        <div class="faq__head">
+          <p class="kicker" data-i18n="c.nav.faq">FAQ</p>
+          <h2 class="h2" id="faq-title" data-i18n="b.faq.title">Straight answers.</h2>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa1"><span data-i18n="b.f1.q">What do callers actually hear?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa1" hidden><p data-i18n="b.f1.a">A courteous, natural voice that answers in your company's name, asks what is going on and records the details, the way a good receptionist would. It is an assistant configured for your trade; most callers simply explain their problem.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa2"><span data-i18n="b.f2.q">What about real emergencies?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa2" hidden><p data-i18n="b.f2.a">You define the rules. Anything you flag as urgent is forwarded to your cell immediately. Everything else waits in the summary.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa3"><span data-i18n="b.f3.q">Can I still answer my own phone?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa3" hidden><p data-i18n="b.f3.a">Yes. The receptionist only takes what you don't. Many owners start with after-hours only.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa4"><span data-i18n="b.f4.q">Do I keep my number?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa4" hidden><p data-i18n="b.f4.a">Yes. We connect to your existing line. Your customers notice no difference.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa5"><span data-i18n="b.f5.q">How long is setup?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa5" hidden><p data-i18n="b.f5.a">One short call, running within 24 hours. Nothing to install on your side.</p></div>
+        </div>
+        <div class="qa">
+          <button class="qa__q" aria-expanded="false" aria-controls="qa6"><span data-i18n="b.f6.q">Is there a contract?</span><span class="qa__icon" aria-hidden="true"></span></button>
+          <div class="qa__a" id="qa6" hidden><p data-i18n="b.f6.a">Month to month. If it does not earn its keep, cancel anytime.</p></div>
+        </div>
       </div>
     </section>
 

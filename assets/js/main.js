@@ -10,6 +10,28 @@
   var page = document.body.getAttribute('data-page') || '';
   var STORE_KEY = '911_lang';
 
+  /* ── Niche (outreach personalization via ?niche=) ── */
+  var nicheKey = null;
+  try {
+    var qp = new URLSearchParams(window.location.search).get('niche');
+    if (qp && window.NICHES && window.NICHES[qp.toLowerCase()]) nicheKey = qp.toLowerCase();
+  } catch (e) {}
+
+  function nicheTokens() {
+    if (!nicheKey || !window.NICHES) return null;
+    var n = window.NICHES[nicheKey];
+    return (n && n[lang]) || null;
+  }
+
+  function applyNiche() {
+    var tok = nicheTokens();
+    if (!tok) return;
+    document.querySelectorAll('[data-niche-token]').forEach(function (el) {
+      var v = tok[el.getAttribute('data-niche-token')];
+      if (typeof v === 'string') el.textContent = v;
+    });
+  }
+
   /* ── Language manager ──────────────────────────── */
   var dicts = window.I18N || { en: {}, fr: {} };
 
@@ -59,8 +81,9 @@
       btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
     });
 
-    // Reset the rotating trade word to the new language
+    // Reset the rotating trade word, then apply niche tokens on top
     resetTrade();
+    applyNiche();
   }
 
   document.querySelectorAll('.lang button').forEach(function (btn) {
@@ -82,11 +105,14 @@
 
   function resetTrade() {
     if (!tradeEl) return;
+    if (tradeTimer) { clearInterval(tradeTimer); tradeTimer = null; }
+    // A niche link fixes the trade word: no rotation, targeted messaging.
+    var tok = nicheTokens();
+    if (tok && tok.pill) { tradeEl.textContent = tok.pill; return; }
     var arr = tradeList();
     if (!arr) return;
     tradeIdx = 0;
     tradeEl.textContent = arr[0];
-    if (tradeTimer) { clearInterval(tradeTimer); tradeTimer = null; }
     if (!reduceMotion) {
       tradeTimer = setInterval(function () {
         tradeEl.style.opacity = '0';

@@ -17,32 +17,38 @@ window.I18N = {
     "c.nav.faq": "FAQ",
     "c.cta.demo": "Book a demo",
     "c.cta.pricing": "See pricing",
+    "c.cta.example": "See a live example",
     "c.trust.1": "Live in 24 hours",
-    "c.trust.2": "Zero effort on your end",
+    "c.trust.2": "30-day money-back guarantee",
     "c.trust.3": "Cancel anytime",
+    "c.cred.label": "Built by a team that ran digital campaigns for",
 
     /* Pricing (shared grid) */
     "c.pricing.kicker": "Pricing",
     "c.pricing.title": "Simple pricing. No surprises.",
-    "c.pricing.sub": "In US dollars, billed monthly. No setup fee. Cancel anytime.",
+    "c.pricing.sub": "Everything you need to be the best <span data-niche-token=\"town\">trade business</span> in town.",
+    "c.pricing.note": "Prices in USD, billed monthly. No setup fee. Save 10% paid annually.",
     "c.per": "/ month",
     "c.badge.popular": "Most popular",
     "c.badge.reco": "Recommended",
-    "c.plan1.name": "Starter",
+    "c.plan1.name": "Website",
     "c.plan1.desc": "Everything you need to be found and trusted.",
     "c.plan1.f1": "Fast, mobile-first website",
     "c.plan1.f2": "Smart chat that captures requests 24/7",
     "c.plan1.f3": "Google Business profile, set up right",
-    "c.plan2.name": "Pro",
-    "c.plan2.desc": "Starter, plus your calls answered for you.",
-    "c.plan2.f1": "Everything in Starter",
+    "c.plan2.name": "24/7 Receptionist",
+    "c.plan2.desc": "The website, plus your calls answered for you.",
+    "c.plan2.f1": "Everything in Website",
     "c.plan2.f2": "Voice assistant on your business line",
     "c.plan2.f3": "After-hours only, or around the clock",
-    "c.plan3.name": "Sales Ops",
-    "c.plan3.desc": "Pro, plus a clear view of every request.",
-    "c.plan3.f1": "Everything in Pro",
+    "c.plan3.name": "Sales CRM",
+    "c.plan3.desc": "The receptionist, plus a clear view of every request.",
+    "c.plan3.f1": "Everything in 24/7 Receptionist",
     "c.plan3.f2": "Sales CRM: every request tracked to a quote",
     "c.plan3.f3": "Follow-ups that never slip",
+    "c.guar.kicker": "Our guarantee",
+    "c.guar.title": "Try it for 30 days. Love it, or get your money back.",
+    "c.guar.sub": "A 30-day money-back guarantee on every plan, no questions asked. If it does not earn its keep, you pay nothing.",
     "c.addons.title": "Add-ons. $49 per month each.",
     "c.addons.1": "Google reviews management",
     "c.addons.2": "Newsletters",
@@ -78,10 +84,10 @@ window.I18N = {
     "a.hero.sub": "911 Websites builds fast, mobile-first websites for trade businesses, with lead capture built in from day one. When the furnace breaks at 9pm, the company that looks trustworthy gets the call.",
     "a.hero.micro": "From $99 per month. No setup fee. Cancel anytime.",
 
-    "a.chat.who": "Air Care Experts, smart chat",
+    "a.chat.who": "Harbor Plumbing, smart chat",
     "a.chat.status": "Capturing requests, 11:04 PM",
-    "a.chat.m1": "Good evening. Is this about heating, cooling, or something else?",
-    "a.chat.m2": "Our AC stopped working. Can someone come tomorrow?",
+    "a.chat.m1": "Good evening. Is this about a repair, an installation, or an emergency?",
+    "a.chat.m2": "Our water heater just died. Can someone come tomorrow?",
     "a.chat.m3": "Yes. The first slot is 7:00 AM. May I have your name and number?",
     "a.chat.m4": "Mike Torres, (602) 555-0192.",
     "a.chat.captured": "Request saved. Waiting for you in the morning.",
@@ -148,9 +154,11 @@ window.I18N = {
     "a.f5.q": "Is there a contract?",
     "a.f5.a": "Month to month. If the site does not earn its keep, cancel anytime.",
 
+    "a.break": "Your crew does the work. Your website brings the jobs.",
     "a.contact.kicker": "Start here",
     "a.contact.title": "Let's get you <span class=\"accent\">found.</span>",
     "a.contact.lead": "A 15-minute demo. We look at your current presence and show you exactly what we would build.",
+    "a.contact.founding": "Be one of our founding clients.",
     "a.form.subject": "[Website] Demo request",
 
     /* ── Variant B: /reception ── */
@@ -158,7 +166,7 @@ window.I18N = {
     "b.meta.desc": "Your business line answered, qualified and summarized for trade businesses. Website included, from $199 per month, no contracts.",
     "b.hero.kicker": "Call handling for the trades",
     "b.hero.title": "The first company that answers <span class=\"accent\">wins the job.</span>",
-    "b.hero.sub": "The Dispatch Desk answers when you're on a job: it qualifies the request, books the appointment, and hands you a clean summary at the end of the day. Your evenings are yours again.",
+    "b.hero.sub": "Your 24/7 receptionist answers when you're on a job: it qualifies the request, books the appointment, and hands you a clean summary at the end of the day. Your evenings are yours again.",
     "b.hero.micro": "From $199 per month, website included.",
 
     "b.digest.title": "Your end-of-day summary",
@@ -181,7 +189,7 @@ window.I18N = {
     "b.pain3.desc": "Returning calls and writing quotes after supper is unpaid office work. It is also family time.",
 
     "b.sol.kicker": "The solution",
-    "b.sol.title": "Meet <span class=\"accent\">the Dispatch Desk.</span>",
+    "b.sol.title": "Meet <span class=\"accent\">your 24/7 receptionist.</span>",
     "b.sol.f.title": "It answers when you can't.",
     "b.sol.f.desc": "On a job, after hours, on weekends: callers get a professional greeting in your company's name, not a voicemail. The request is qualified and recorded, every time.",
     "b.sol.f.c1": "Answers in your name",
@@ -226,7 +234,7 @@ window.I18N = {
     "b.f2.q": "What about real emergencies?",
     "b.f2.a": "You define the rules. Anything you flag as urgent is forwarded to your cell immediately. Everything else waits in the summary.",
     "b.f3.q": "Can I still answer my own phone?",
-    "b.f3.a": "Yes. The Dispatch Desk only takes what you don't. Many owners start with after-hours only.",
+    "b.f3.a": "Yes. The receptionist only takes what you don't. Many owners start with after-hours only.",
     "b.f4.q": "Do I keep my number?",
     "b.f4.a": "Yes. We connect to your existing line. Your customers notice no difference.",
     "b.f5.q": "How long is setup?",
@@ -234,9 +242,11 @@ window.I18N = {
     "b.f6.q": "Is there a contract?",
     "b.f6.a": "Month to month. If it does not earn its keep, cancel anytime.",
 
+    "b.break": "You stay on the tools. We answer the phone.",
     "b.contact.kicker": "Start here",
     "b.contact.title": "Take your <span class=\"accent\">evenings back.</span>",
     "b.contact.lead": "A 15-minute demo. Hear how it answers, and see a real end-of-day summary.",
+    "b.contact.founding": "Be one of our founding clients.",
     "b.form.subject": "[Reception] Demo request",
 
     /* ── Selector (internal) ── */
@@ -246,11 +256,11 @@ window.I18N = {
     "home.lead": "Each page stands alone. Send prospects straight to a variant; this page is only for comparing them.",
     "home.a.tag": "Variant A",
     "home.a.title": "The Website",
-    "home.a.desc": "Lead with the site: be found, look solid, capture requests. Starter tier featured.",
+    "home.a.desc": "Lead with the site: be found, look solid, capture requests. Website tier featured.",
     "home.a.cta": "View /website",
     "home.b.tag": "Variant B",
-    "home.b.title": "The Dispatch Desk",
-    "home.b.desc": "Lead with the calls: answered, qualified, summarized. Pro tier featured.",
+    "home.b.title": "The 24/7 Receptionist",
+    "home.b.desc": "Lead with the calls: answered, qualified, summarized. Receptionist tier featured.",
     "home.b.cta": "View /reception"
   },
 
@@ -264,32 +274,38 @@ window.I18N = {
     "c.nav.faq": "FAQ",
     "c.cta.demo": "Réserver une démo",
     "c.cta.pricing": "Voir les tarifs",
+    "c.cta.example": "Voir un exemple en direct",
     "c.trust.1": "En ligne en 24 heures",
-    "c.trust.2": "Zéro effort de votre côté",
+    "c.trust.2": "Satisfait ou remboursé 30 jours",
     "c.trust.3": "Sans engagement",
+    "c.cred.label": "Conçu par une équipe qui a mené des campagnes numériques pour",
 
     /* Tarifs */
     "c.pricing.kicker": "Tarifs",
     "c.pricing.title": "Des tarifs simples. Sans surprise.",
-    "c.pricing.sub": "En dollars américains, facturés au mois. Aucuns frais d'installation. Sans engagement.",
+    "c.pricing.sub": "Tout ce qu'il faut pour être l'entreprise <span data-niche-token=\"town\">de métier</span> de référence dans votre région.",
+    "c.pricing.note": "Prix en dollars américains, facturés au mois. Aucuns frais d'installation. Économisez 10 % en paiement annuel.",
     "c.per": "/ mois",
     "c.badge.popular": "Le plus populaire",
     "c.badge.reco": "Recommandé",
-    "c.plan1.name": "Starter",
+    "c.plan1.name": "Site Web",
     "c.plan1.desc": "Tout ce qu'il faut pour être trouvé et inspirer confiance.",
     "c.plan1.f1": "Site rapide, pensé mobile d'abord",
     "c.plan1.f2": "Chat intelligent qui capte les demandes 24/7",
     "c.plan1.f3": "Fiche Google Business configurée dans les règles",
-    "c.plan2.name": "Pro",
-    "c.plan2.desc": "Starter, plus vos appels pris en charge.",
-    "c.plan2.f1": "Tout le forfait Starter",
+    "c.plan2.name": "Réceptionniste 24/7",
+    "c.plan2.desc": "Le site, plus vos appels pris en charge.",
+    "c.plan2.f1": "Tout le forfait Site Web",
     "c.plan2.f2": "Assistant vocal branché sur votre ligne d'affaires",
     "c.plan2.f3": "Hors heures d'ouverture seulement, ou 24/7",
-    "c.plan3.name": "Sales Ops",
-    "c.plan3.desc": "Pro, plus une vue claire sur chaque demande.",
-    "c.plan3.f1": "Tout le forfait Pro",
+    "c.plan3.name": "CRM de vente",
+    "c.plan3.desc": "La réceptionniste, plus une vue claire sur chaque demande.",
+    "c.plan3.f1": "Tout le forfait Réceptionniste 24/7",
     "c.plan3.f2": "CRM de vente : chaque demande suivie jusqu'à la soumission",
     "c.plan3.f3": "Des relances qui ne tombent jamais dans l'oubli",
+    "c.guar.kicker": "Notre garantie",
+    "c.guar.title": "Essayez pendant 30 jours. Convaincu, ou remboursé.",
+    "c.guar.sub": "Satisfait ou remboursé 30 jours sur tous les forfaits, sans condition. S'il ne fait pas ses preuves, vous ne payez rien.",
     "c.addons.title": "Options. 49 $ par mois chacune.",
     "c.addons.1": "Gestion des avis Google",
     "c.addons.2": "Infolettres",
@@ -325,10 +341,10 @@ window.I18N = {
     "a.hero.sub": "911 Websites conçoit des sites rapides, pensés mobile d'abord, avec la capture de demandes intégrée dès le premier jour. Quand la fournaise lâche à 21 h, c'est l'entreprise qui inspire confiance qui reçoit l'appel.",
     "a.hero.micro": "À partir de 99 $ par mois. Aucuns frais d'installation. Sans engagement.",
 
-    "a.chat.who": "Air Care Experts, chat intelligent",
+    "a.chat.who": "Harbor Plumbing, chat intelligent",
     "a.chat.status": "Capte les demandes, 23 h 04",
-    "a.chat.m1": "Bonsoir. Votre demande concerne le chauffage, la climatisation ou autre chose ?",
-    "a.chat.m2": "Notre climatisation ne fonctionne plus. Quelqu'un peut passer demain ?",
+    "a.chat.m1": "Bonsoir. Votre demande concerne une réparation, une installation ou une urgence ?",
+    "a.chat.m2": "Notre chauffe-eau vient de lâcher. Quelqu'un peut passer demain ?",
     "a.chat.m3": "Oui. La première plage est à 7 h. Puis-je avoir votre nom et votre numéro ?",
     "a.chat.m4": "Mike Torres, (602) 555-0192.",
     "a.chat.captured": "Demande enregistrée. Elle vous attend au matin.",
@@ -395,9 +411,11 @@ window.I18N = {
     "a.f5.q": "Y a-t-il un contrat ?",
     "a.f5.a": "Au mois. Si le site ne fait pas ses preuves, vous annulez quand vous voulez.",
 
+    "a.break": "Votre équipe fait le travail. Votre site apporte les chantiers.",
     "a.contact.kicker": "Commencez ici",
     "a.contact.title": "Faites-vous trouver <span class=\"accent\">en premier.</span>",
     "a.contact.lead": "Une démo de 15 minutes. Nous examinons votre présence actuelle et vous montrons exactement ce que nous bâtirions.",
+    "a.contact.founding": "Faites partie de nos premiers clients.",
     "a.form.subject": "[Website] Demande de démo",
 
     /* ── Variante B : /reception ── */
@@ -405,7 +423,7 @@ window.I18N = {
     "b.meta.desc": "Votre ligne d'affaires répondue, qualifiée et résumée pour les entreprises de métier. Site web inclus, à partir de 199 $ par mois, sans engagement.",
     "b.hero.kicker": "La prise d'appels pour les gens de métier",
     "b.hero.title": "La première entreprise qui décroche <span class=\"accent\">remporte le chantier.</span>",
-    "b.hero.sub": "Le Standard répond quand vous êtes sur un chantier : il qualifie la demande, fixe le rendez-vous et vous remet un résumé clair en fin de journée. Vos soirées vous appartiennent à nouveau.",
+    "b.hero.sub": "Votre réceptionniste 24/7 répond quand vous êtes sur un chantier : elle qualifie la demande, fixe le rendez-vous et vous remet un résumé clair en fin de journée. Vos soirées vous appartiennent à nouveau.",
     "b.hero.micro": "À partir de 199 $ par mois, site web inclus.",
 
     "b.digest.title": "Votre résumé de fin de journée",
@@ -428,7 +446,7 @@ window.I18N = {
     "b.pain3.desc": "Rappeler des clients et rédiger des soumissions après le souper, c'est du travail de bureau non payé. C'est aussi du temps en famille.",
 
     "b.sol.kicker": "La solution",
-    "b.sol.title": "Voici <span class=\"accent\">le Standard.</span>",
+    "b.sol.title": "Voici <span class=\"accent\">votre réceptionniste 24/7.</span>",
     "b.sol.f.title": "Il décroche quand vous ne pouvez pas.",
     "b.sol.f.desc": "Sur un chantier, après les heures, la fin de semaine : vos clients sont accueillis professionnellement au nom de votre entreprise, pas par une boîte vocale. La demande est qualifiée et notée, chaque fois.",
     "b.sol.f.c1": "Répond au nom de votre entreprise",
@@ -473,7 +491,7 @@ window.I18N = {
     "b.f2.q": "Et les vraies urgences ?",
     "b.f2.a": "Vous définissez les règles. Tout ce que vous marquez comme urgent est transféré immédiatement sur votre cellulaire. Le reste attend dans le résumé.",
     "b.f3.q": "Puis-je encore répondre moi-même ?",
-    "b.f3.a": "Oui. Le Standard prend seulement ce que vous ne prenez pas. Plusieurs propriétaires commencent avec le mode hors heures d'ouverture.",
+    "b.f3.a": "Oui. La réceptionniste prend seulement ce que vous ne prenez pas. Plusieurs propriétaires commencent avec le mode hors heures d'ouverture.",
     "b.f4.q": "Est-ce que je garde mon numéro ?",
     "b.f4.a": "Oui. Nous nous branchons sur votre ligne actuelle. Vos clients ne voient aucune différence.",
     "b.f5.q": "Combien de temps pour l'installation ?",
@@ -481,9 +499,11 @@ window.I18N = {
     "b.f6.q": "Y a-t-il un contrat ?",
     "b.f6.a": "Au mois. S'il ne fait pas ses preuves, vous annulez quand vous voulez.",
 
+    "b.break": "Vous restez sur les outils. Nous répondons au téléphone.",
     "b.contact.kicker": "Commencez ici",
     "b.contact.title": "Reprenez <span class=\"accent\">vos soirées.</span>",
-    "b.contact.lead": "Une démo de 15 minutes. Écoutez comment il répond, et voyez un vrai résumé de fin de journée.",
+    "b.contact.lead": "Une démo de 15 minutes. Écoutez comment elle répond, et voyez un vrai résumé de fin de journée.",
+    "b.contact.founding": "Faites partie de nos premiers clients.",
     "b.form.subject": "[Reception] Demande de démo",
 
     /* ── Sélecteur (interne) ── */
@@ -493,11 +513,35 @@ window.I18N = {
     "home.lead": "Chaque page est autonome. Envoyez les prospects directement vers une variante ; cette page sert uniquement à comparer.",
     "home.a.tag": "Variante A",
     "home.a.title": "Le site web",
-    "home.a.desc": "L'angle site : être trouvé, inspirer confiance, capter les demandes. Forfait Starter en avant.",
+    "home.a.desc": "L'angle site : être trouvé, inspirer confiance, capter les demandes. Forfait Site Web en avant.",
     "home.a.cta": "Voir /website",
     "home.b.tag": "Variante B",
-    "home.b.title": "Le Standard",
-    "home.b.desc": "L'angle appels : répondus, qualifiés, résumés. Forfait Pro en avant.",
+    "home.b.title": "La Réceptionniste 24/7",
+    "home.b.desc": "L'angle appels : répondus, qualifiés, résumés. Forfait Réceptionniste en avant.",
     "home.b.cta": "Voir /reception"
+  }
+};
+
+/* ─── Niche personalization config ───
+   Driven by the ?niche= URL parameter (outreach links, per-trade ads).
+   Each niche defines per-language tokens: `pill` fixes the hero trade
+   word (variant A), `town` fills the pricing subtitle. Extend with more
+   fields (hero image, demo business name...) as the machine scales. */
+window.NICHES = {
+  hvac: {
+    en: { pill: "HVAC",       town: "HVAC company" },
+    fr: { pill: "de chauffage", town: "de chauffage" }
+  },
+  plumbing: {
+    en: { pill: "plumbing",   town: "plumbing company" },
+    fr: { pill: "de plomberie", town: "de plomberie" }
+  },
+  electrical: {
+    en: { pill: "electrical", town: "electrical company" },
+    fr: { pill: "d'électricité", town: "d'électricité" }
+  },
+  roofing: {
+    en: { pill: "roofing",    town: "roofing company" },
+    fr: { pill: "de toiture",  town: "de toiture" }
   }
 };
