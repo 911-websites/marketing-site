@@ -4,10 +4,15 @@ Bilingual (FR + EN) marketing site with **two standalone landing pages**, each d
 
 | Route | Variant | Angle | Featured tier |
 |---|---|---|---|
-| `/` | Internal selector | Compare both at a glance (noindex, not for prospects) | - |
+| `/` | **Home = Variant A** (rewrite to `/website`) | A real landing for anyone hitting the domain root | Website, $99/mo |
 | `/website` | **A: The Website** | Be found, look solid, capture requests | Website, $99/mo |
 | `/reception` | **B: The 24/7 Receptionist** | Calls answered, qualified, summarized; evenings back | 24/7 Receptionist, $199/mo |
 | `/demo` | Example build | A fictional client site (Harbor Plumbing), clearly labeled, linked from the "See a live example" buttons | - |
+| `/lab` | Internal selector | Compare both variants at a glance (noindex, never linked from the variants) | - |
+
+The home choice is a rewrite in `vercel.json` (and `serve.json` locally): swap the destination to `/reception` in both files if the B angle wins the test.
+
+**Design:** light, warm, craftsman-grade (paper background, ink text, single deep-red accent). Dark appears only where it earns its place: photography, the guarantee band, the footer.
 
 Both variants share the same theme and components on purpose: the test isolates the **message**, not the design.
 
