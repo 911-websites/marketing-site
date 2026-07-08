@@ -572,6 +572,22 @@ body::after {
   padding: 6px 12px;
 }
 
+/* ── PILLARS (home: the two offers, side by side) ── */
+.pillars { display: grid; gap: var(--s4); margin-top: var(--s12); }
+.pillars .tile--feature { grid-column: auto; display: flex; flex-direction: column; }
+.pillar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--s6);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--red-deep);
+  min-height: 44px;
+}
+.pillar__link svg { width: 16px; height: 16px; transition: transform var(--t); }
+.pillar__link:hover svg { transform: translateX(4px); }
+
 /* ── STEPS ─────────────────────────────────────── */
 .steps { display: grid; gap: var(--s8); margin-top: var(--s12); }
 .step {
@@ -1038,6 +1054,7 @@ body::after {
   .bento--three .tile { grid-column: auto; }
 
   .benefits { grid-template-columns: repeat(3, 1fr); }
+  .pillars { grid-template-columns: 1fr 1fr; align-items: stretch; }
   .plans { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
   .addons__list { grid-template-columns: repeat(2, 1fr); }
   .cred__inner { flex-direction: row; align-items: center; gap: var(--s8); }

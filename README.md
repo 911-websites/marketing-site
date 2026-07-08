@@ -2,15 +2,15 @@
 
 Bilingual (FR + EN) marketing site with **two standalone landing pages**, each defending a different positioning angle for 911 Websites, so they can be shown to prospects independently and compared.
 
-| Route | Variant | Angle | Featured tier |
+| Route | Page | Angle | Featured tier |
 |---|---|---|---|
-| `/` | **Home = Variant A** (rewrite to `/website`) | A real landing for anyone hitting the domain root | Website, $99/mo |
+| `/` | **Home: the full offer** | Both pillars (website + 24/7 receptionist), mixed proof, complete pricing | 24/7 Receptionist, $199/mo |
 | `/website` | **A: The Website** | Be found, look solid, capture requests | Website, $99/mo |
 | `/reception` | **B: The 24/7 Receptionist** | Calls answered, qualified, summarized; evenings back | 24/7 Receptionist, $199/mo |
 | `/demo` | Example build | A fictional client site (Harbor Plumbing), clearly labeled, linked from the "See a live example" buttons | - |
 | `/lab` | Internal selector | Compare both variants at a glance (noindex, never linked from the variants) | - |
 
-The home choice is a rewrite in `vercel.json` (and `serve.json` locally): swap the destination to `/reception` in both files if the B angle wins the test.
+The home presents the whole company; `/website` and `/reception` are the sharpened single-angle pages for the positioning test (send prospects direct links). The home's pillar cards link to each.
 
 **Design:** light, warm, craftsman-grade (paper background, ink text, single deep-red accent). Dark appears only where it earns its place: photography, the guarantee band, the footer.
 
