@@ -10,7 +10,21 @@ Bilingual (FR + EN) marketing site with **two standalone landing pages**, each d
 | `/demo` | Example build | A fictional client site (Harbor Plumbing), clearly labeled, linked from the "See a live example" buttons | - |
 | `/lab` | Internal selector | Compare both variants at a glance (noindex, never linked from the variants) | - |
 
-The home presents the whole company; `/website` and `/reception` are the sharpened single-angle pages for the positioning test (send prospects direct links). The home's pillar cards link to each.
+The home presents the whole company (three clickable pillars); `/website`, `/reception` and `/crm` are slim detail sub-pages reusing the existing blocks. Shared sections (full pricing, guarantee band, testimonials, FAQ) live only on the home; sub-page nav links point back to them (`/#pricing`, `/#faq`).
+
+## Outreach domains and redirects
+
+Any domain you use in outreach should land prospects on this site even when typed by hand:
+
+1. **Serve directly (recommended):** Vercel project -> Settings -> Domains -> add the domain (e.g. `get911.site`). It serves the site as-is; `/` lands on the home, and `/{page}?niche=hvac` keeps working for personalized links.
+2. **301-redirect an alternate domain to the main one:** add the domain to the project, then in `vercel.json`:
+   ```json
+   "redirects": [
+     { "source": "/:path*", "has": [{ "type": "host", "value": "alt-domain.com" }],
+       "destination": "https://911websites.co/:path*", "permanent": true }
+   ]
+   ```
+3. `www` vs apex: add both in Vercel Domains; it offers the canonical redirect automatically.
 
 **Design:** light, warm, craftsman-grade (paper background, ink text, single deep-red accent). Dark appears only where it earns its place: photography, the guarantee band, the footer.
 

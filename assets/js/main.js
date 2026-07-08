@@ -248,7 +248,7 @@
         t('c.form.name') + ': ' + nameInput.value.trim() + '\n' +
         t('c.form.phone') + ': ' + phoneInput.value.trim() + '\n\n' +
         (msgInput && msgInput.value.trim() ? msgInput.value.trim() + '\n\n' : '') +
-        'Lang: ' + lang.toUpperCase() + ' / Page: /' + (page === 'a' ? 'website' : page === 'b' ? 'reception' : '');
+        'Lang: ' + lang.toUpperCase() + ' / Page: /' + (page === 'a' ? 'website' : page === 'b' ? 'reception' : page === 'crm' ? 'crm' : '');
 
       window.location.href = 'mailto:team@911websites.co' +
         '?subject=' + encodeURIComponent(subject) +

@@ -272,6 +272,11 @@ window.I18N = {
     "h.contact.lead": "A 15-minute demo of the website and the receptionist, applied to your business.",
     "h.form.subject": "[Home] Demo request",
 
+    /* ── CRM sub-page (functional strings only) ── */
+    "crm.meta.title": "911 Websites: Sales CRM",
+    "crm.meta.desc": "The receptionist, plus a clear view of every request. Sales CRM: every request tracked to a quote.",
+    "crm.form.subject": "[CRM] Demo request",
+
     /* ── Selector (internal) ── */
     "home.meta.title": "911 Websites, positioning lab",
     "home.kicker": "Internal page",
@@ -551,6 +556,11 @@ window.I18N = {
     "h.contact.title": "Votre prochain chantier commence <span class=\"accent\">ici.</span>",
     "h.contact.lead": "Une démo de 15 minutes du site et de la réceptionniste, appliquée à votre entreprise.",
     "h.form.subject": "[Home] Demande de démo",
+
+    /* ── Sous-page CRM (chaînes fonctionnelles seulement) ── */
+    "crm.meta.title": "911 Websites : CRM de vente",
+    "crm.meta.desc": "La réceptionniste, plus une vue claire sur chaque demande. CRM de vente : chaque demande suivie jusqu'à la soumission.",
+    "crm.form.subject": "[CRM] Demande de démo",
 
     /* ── Sélecteur (interne) ── */
     "home.meta.title": "911 Websites, laboratoire de positionnement",

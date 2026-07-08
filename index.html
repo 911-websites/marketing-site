@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
 </head>
 <body data-page="home">
 
@@ -79,32 +79,26 @@
               <span data-i18n="c.trust.2">30-day money-back guarantee</span>
             </li>
             <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span data-i18n="c.trust.3">Cancel anytime</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+              <span data-i18n="a.sol.f.c1">Answers 24/7</span>
             </li>
           </ul>
         </div>
 
-        <!-- Smart-chat panel: a request captured after hours -->
-        <aside class="panel" data-reveal aria-label="Example: the built-in chat capturing a request at night">
-          <div class="panel__head">
-            <span class="panel__avatar" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <!-- Photo visual: a tradesperson at work, both pillars overlaid
+             (call card = receptionist, chat bubble = website capture) -->
+        <aside class="hero-visual" data-reveal aria-label="A tradesperson at work while calls and web requests are handled automatically">
+          <img src="assets/img/electrician.jpg" alt="An electrician working on a panel with both hands busy" />
+          <div class="float-card float-card--call" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+            <span data-i18n="b.digest.r2">3 appointments booked into your calendar</span>
+          </div>
+          <div class="float-card float-card--chat" aria-hidden="true">
+            <span class="who">
+              <span class="live-dot"></span>
+              <span data-i18n="a.chat.who">Harbor Plumbing, smart chat</span>
             </span>
-            <div>
-              <div class="panel__who" data-i18n="a.chat.who">Harbor Plumbing, smart chat</div>
-              <div class="panel__status"><span class="live-dot" aria-hidden="true"></span> <span data-i18n="a.chat.status">Capturing requests, 11:04 PM</span></div>
-            </div>
-          </div>
-          <div class="chatcard__feed" role="log">
-            <div class="msg msg--ai" data-i18n="a.chat.m1">Good evening. Is this about a repair, an installation, or an emergency?</div>
-            <div class="msg msg--user" data-i18n="a.chat.m2">Our water heater just died. Can someone come tomorrow?</div>
-            <div class="msg msg--ai" data-i18n="a.chat.m3">Yes. The first slot is 7:00 AM. May I have your name and number?</div>
-            <div class="msg msg--user" data-i18n="a.chat.m4">Mike Torres, (602) 555-0192.</div>
-          </div>
-          <div class="panel__capture" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            <span data-i18n="a.chat.captured">Request saved. Waiting for you in the morning.</span>
+            <span data-i18n="a.chat.m1">Good evening. Is this about a repair, an installation, or an emergency?</span>
           </div>
         </aside>
       </div>
@@ -125,8 +119,8 @@
       </div>
     </section>
 
-    <!-- THE TWO PILLARS -->
-    <section class="section" id="pillars" aria-labelledby="pillars-title" data-reveal>
+    <!-- THE PILLARS (slate block) -->
+    <section class="section section--dark" id="pillars" aria-labelledby="pillars-title" data-reveal>
       <div class="wrap">
         <div class="section__head">
           <p class="kicker" data-i18n="h.pillars.kicker">What you get</p>
@@ -163,6 +157,22 @@
               <span class="minichip" data-i18n="h.p2.c3">End-of-day summary</span>
             </div>
             <a href="/reception" class="pillar__link">
+              <span data-i18n="h.p.more">Learn more</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="tile tile--feature">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+            </span>
+            <p class="tile__big" data-i18n="c.plan3.desc">The receptionist, plus a clear view of every request.</p>
+            <p data-i18n="c.plan3.f2">Sales CRM: every request tracked to a quote</p>
+            <div class="tile__chips">
+              <span class="minichip" data-i18n="c.plan3.name">Sales CRM</span>
+              <span class="minichip" data-i18n="c.plan3.f3">Follow-ups that never slip</span>
+            </div>
+            <a href="/crm" class="pillar__link">
               <span data-i18n="h.p.more">Learn more</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
@@ -205,8 +215,8 @@
     </section>
 
     <!-- IMAGE BREAK -->
-    <section class="imgbreak" aria-label="Electrician at work, hands busy">
-      <img src="assets/img/electrician.jpg" alt="An electrician working on a panel with both hands busy" loading="lazy" />
+    <section class="imgbreak" aria-label="Trade crew at work">
+      <img src="assets/img/crew.jpg" alt="A trade crew reviewing work together on a job site" loading="lazy" />
       <div class="wrap">
         <h2 class="h2" data-i18n="h.break">You stay on the job. We bring the next one.</h2>
       </div>
@@ -330,8 +340,8 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
+    <!-- CONTACT (slate block) -->
+    <section class="section contact section--dark" id="contact" aria-labelledby="contact-title" data-reveal>
       <div class="wrap contact__grid">
         <div class="contact__pitch">
           <p class="kicker" data-i18n="a.contact.kicker">Start here</p>
@@ -351,6 +361,7 @@
               <span data-i18n="c.trust.3">Cancel anytime</span>
             </li>
           </ul>
+          <a href="/demo" class="btn btn--ghost" style="margin-top: var(--s8);" data-i18n="c.cta.example">See a live example</a>
         </div>
 
         <form class="form" id="demoForm" data-subject-key="h.form.subject" novalidate aria-label="Demo request">
@@ -425,6 +436,7 @@
       </nav>
       <div class="footer__contact">
         <a href="mailto:team@911websites.co" class="footer__mail">team@911websites.co</a>
+        <a href="#contact" class="btn btn--primary btn--nav" data-i18n="c.cta.demo">Book a demo</a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -434,7 +446,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=2"></script>
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/i18n.js?v=3"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
