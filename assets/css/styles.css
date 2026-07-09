@@ -578,6 +578,31 @@ body::after {
 /* ── PILLARS (home: the two offers, side by side) ── */
 .pillars { display: grid; gap: var(--s4); margin-top: var(--s12); }
 .pillars .tile--feature { grid-column: auto; display: flex; flex-direction: column; }
+
+/* Sales CRM: compact extension card below the two pillars */
+.pillar-mini {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s4);
+  margin-top: var(--s4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s5) var(--s6);
+  transition: border-color var(--t), transform var(--t), box-shadow var(--t);
+}
+.pillar-mini:hover { border-color: rgba(208, 20, 28, 0.35); transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+.pillar-mini .tile__ico { margin-bottom: 0; flex-shrink: 0; }
+.pillar-mini__body { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 200px; }
+.pillar-mini__t {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.pillar-mini__s { font-size: var(--fs-sm); color: var(--text-2); }
 .pillar__link {
   display: inline-flex;
   align-items: center;
@@ -1184,7 +1209,7 @@ body::after {
   .proof__grid { grid-template-columns: repeat(3, 1fr); align-items: start; }
   .quote--feature { grid-column: span 3; }
   .addons__list { grid-template-columns: repeat(3, 1fr); }
-  .pillars { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+  .pillars { grid-template-columns: 1fr 1fr; align-items: stretch; }
   .hero-visual { justify-self: end; min-height: 460px; }
 
   .contact__grid { grid-template-columns: 1fr 1fr; align-items: start; gap: var(--s16); }

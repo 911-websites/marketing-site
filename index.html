@@ -104,21 +104,6 @@
       </div>
     </section>
 
-    <!-- CREDIBILITY (founder pedigree, text only, no logos) -->
-    <section class="cred" aria-label="Team experience" data-reveal>
-      <div class="wrap cred__inner">
-        <p class="cred__label" data-i18n="c.cred.label">Built by a team that ran digital campaigns for</p>
-        <ul class="cred__names">
-          <li>Home Depot</li>
-          <li>Lowe's</li>
-          <li>Castorama</li>
-          <li>General Motors</li>
-          <li>Chevrolet</li>
-          <li>Lexus</li>
-        </ul>
-      </div>
-    </section>
-
     <!-- THE PILLARS (slate block) -->
     <section class="section section--dark" id="pillars" aria-labelledby="pillars-title" data-reveal>
       <div class="wrap">
@@ -162,22 +147,22 @@
             </a>
           </article>
 
-          <article class="tile tile--feature">
-            <span class="tile__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
-            </span>
-            <p class="tile__big" data-i18n="c.plan3.desc">The receptionist, plus a clear view of every request.</p>
-            <p data-i18n="c.plan3.f2">Sales CRM: every request tracked to a quote</p>
-            <div class="tile__chips">
-              <span class="minichip" data-i18n="c.plan3.name">Sales CRM</span>
-              <span class="minichip" data-i18n="c.plan3.f3">Follow-ups that never slip</span>
-            </div>
-            <a href="/crm" class="pillar__link">
-              <span data-i18n="h.p.more">Learn more</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </article>
         </div>
+
+        <!-- Sales CRM: an extension of the two pillars, not a third one -->
+        <a href="/crm" class="pillar-mini">
+          <span class="tile__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+          </span>
+          <span class="pillar-mini__body">
+            <span class="pillar-mini__t" data-i18n="c.plan3.name">Sales CRM</span>
+            <span class="pillar-mini__s" data-i18n="c.plan3.desc">The receptionist, plus a clear view of every request.</span>
+          </span>
+          <span class="pillar__link" style="margin-top: 0;">
+            <span data-i18n="h.p.more">Learn more</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
       </div>
     </section>
 
@@ -337,10 +322,6 @@
           <p class="kicker" data-i18n="a.contact.kicker">Start here</p>
           <h2 class="display" id="contact-title" data-i18n-html="h.contact.title">Your next job starts <span class="accent">here.</span></h2>
           <p class="lead" data-i18n="h.contact.lead">A 15-minute demo of the website and the receptionist, applied to your business.</p>
-          <span class="founding">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.3 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 8.9 8.3 12 2"/></svg>
-            <span data-i18n="a.contact.founding">Be one of our founding clients.</span>
-          </span>
           <ul class="trust" aria-label="Guarantees">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
@@ -402,6 +383,21 @@
           <button class="qa__q" aria-expanded="false" aria-controls="qa5"><span data-i18n="a.f5.q">Is there a contract?</span><span class="qa__icon" aria-hidden="true"></span></button>
           <div class="qa__a" id="qa5" hidden><p data-i18n="a.f5.a">Month to month. If the site does not earn its keep, cancel anytime.</p></div>
         </div>
+      </div>
+    </section>
+
+    <!-- CREDIBILITY (founder pedigree, text only, no logos) -->
+    <section class="cred" aria-label="Team experience" data-reveal>
+      <div class="wrap cred__inner">
+        <p class="cred__label" data-i18n="c.cred.label">Built by a team that ran digital campaigns for</p>
+        <ul class="cred__names">
+          <li>Home Depot</li>
+          <li>Lowe's</li>
+          <li>Castorama</li>
+          <li>General Motors</li>
+          <li>Chevrolet</li>
+          <li>Lexus</li>
+        </ul>
       </div>
     </section>
 
