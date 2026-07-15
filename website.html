@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
 </head>
 <body data-page="a">
 
@@ -113,27 +113,36 @@
       </div>
     </section>
 
-    <!-- PROBLEM (editorial split, distinct from the tile grids) -->
-    <section class="section" id="problem" aria-labelledby="problem-title" data-reveal>
-      <div class="wrap probgrid">
-        <div>
+    <!-- PROBLEM (slate block, home grid: section__head + tiles) -->
+    <section class="section section--dark" id="problem" aria-labelledby="problem-title" data-reveal>
+      <div class="wrap">
+        <div class="section__head">
           <p class="kicker" data-i18n="a.problem.kicker">The problem</p>
           <h2 class="h2" id="problem-title" data-i18n-html="a.problem.title">They search on their phone. <span class="accent">Right now.</span></h2>
-          <p class="lead" style="margin-top: var(--s5);" data-i18n="a.problem.lead">Referred or not, customers look you up before they dial. What they find in those first seconds decides who gets the call.</p>
+          <p class="lead" data-i18n="a.problem.lead">Referred or not, customers look you up before they dial. What they find in those first seconds decides who gets the call.</p>
         </div>
-        <div class="pains stagger">
-          <div class="pain">
+        <div class="bento bento--three stagger">
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </span>
             <h3 class="h3" data-i18n="a.pain1.title">An outdated site plants doubt.</h3>
             <p data-i18n="a.pain1.desc">A slow page or a 2012 design suggests the work might look the same. Fair or not, that is the verdict.</p>
-          </div>
-          <div class="pain">
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
             <h3 class="h3" data-i18n="a.pain2.title">Invisible means unavailable.</h3>
             <p data-i18n="a.pain2.desc">Every day, people search your trade in your area. Without a solid presence, the job goes to whoever shows up.</p>
-          </div>
-          <div class="pain">
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9"/><polyline points="12 7 12 12 15 15"/><line x1="17" y1="21" x2="23" y2="21"/></svg>
+            </span>
             <h3 class="h3" data-i18n="a.pain3.title">After hours, the door is closed.</h3>
             <p data-i18n="a.pain3.desc">Emergencies do not wait for business hours. A site that cannot take a request at 11pm is losing work quietly.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -224,7 +233,7 @@
       </div>
     </section>
     <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
+    <section class="section contact section--dark" id="contact" aria-labelledby="contact-title" data-reveal>
       <div class="wrap contact__grid">
         <div class="contact__pitch">
           <p class="kicker" data-i18n="a.contact.kicker">Start here</p>
@@ -309,7 +318,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=3"></script>
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/i18n.js?v=4"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>

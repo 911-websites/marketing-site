@@ -30,6 +30,13 @@
       var v = tok[el.getAttribute('data-niche-token')];
       if (typeof v === 'string') el.textContent = v;
     });
+    // Swap the hero photo so the visual never contradicts the trade
+    var img = document.querySelector('[data-niche-img]');
+    if (img) {
+      var n = window.NICHES[nicheKey];
+      if (n && n.img) img.setAttribute('src', n.img);
+      if (typeof tok.alt === 'string') img.setAttribute('alt', tok.alt);
+    }
   }
 
   /* ── Language manager ──────────────────────────── */
@@ -74,6 +81,14 @@
     document.querySelectorAll('[data-i18n-content]').forEach(function (el) {
       var v = t(el.getAttribute('data-i18n-content'));
       if (typeof v === 'string') el.setAttribute('content', v);
+    });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+      var v = t(el.getAttribute('data-i18n-alt'));
+      if (typeof v === 'string') el.setAttribute('alt', v);
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
+      var v = t(el.getAttribute('data-i18n-aria'));
+      if (typeof v === 'string') el.setAttribute('aria-label', v);
     });
 
     // Toggle state
@@ -202,6 +217,20 @@
         if (el.getBoundingClientRect().top < window.innerHeight * 1.1) el.classList.add('in');
       });
     }, 250);
+  });
+
+  /* ── Testimonial carousel (desktop + mobile) ───── */
+  document.querySelectorAll('.carousel').forEach(function (car) {
+    var track = car.querySelector('.carousel__track');
+    var prev = car.querySelector('.carousel__btn--prev');
+    var next = car.querySelector('.carousel__btn--next');
+    if (!track || !prev || !next) return;
+    function step() {
+      var card = track.querySelector('.quote');
+      return card ? card.getBoundingClientRect().width + 16 : 320;
+    }
+    prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
   });
 
   /* ── FAQ accordion ─────────────────────────────── */

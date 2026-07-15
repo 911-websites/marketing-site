@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
 </head>
 <body data-page="b">
 
@@ -126,27 +126,36 @@
       </div>
     </section>
 
-    <!-- PROBLEM (editorial split, distinct from the tile grids) -->
-    <section class="section" id="problem" aria-labelledby="problem-title" data-reveal>
-      <div class="wrap probgrid">
-        <div>
+    <!-- PROBLEM (slate block, home grid: section__head + tiles) -->
+    <section class="section section--dark" id="problem" aria-labelledby="problem-title" data-reveal>
+      <div class="wrap">
+        <div class="section__head">
           <p class="kicker" data-i18n="b.problem.kicker">The problem</p>
           <h2 class="h2" id="problem-title" data-i18n-html="b.problem.title">Twenty calls a day. <span class="accent">Two hours of callbacks every night.</span></h2>
-          <p class="lead" style="margin-top: var(--s5);" data-i18n="b.problem.lead">That is not a phone problem. That is a growth ceiling.</p>
+          <p class="lead" data-i18n="b.problem.lead">That is not a phone problem. That is a growth ceiling.</p>
         </div>
-        <div class="pains stagger">
-          <div class="pain">
+        <div class="bento bento--three stagger">
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4.7 12 19.8 19.8 0 0 1 1.6 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L7.9 8.1a16 16 0 0 0 6 6l1-1a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+            </span>
             <h3 class="h3" data-i18n="b.pain1.title">Every ring interrupts a job.</h3>
             <p data-i18n="b.pain1.desc">Answer, and the work stops. Ignore it, and it may have been the best contract of the month.</p>
-          </div>
-          <div class="pain">
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </span>
             <h3 class="h3" data-i18n="b.pain2.title">Every call sounds the same.</h3>
             <p data-i18n="b.pain2.desc">An emergency, a price shopper and a telemarketer ring the exact same way. You find out by picking up.</p>
-          </div>
-          <div class="pain">
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 1 9-9"/><polyline points="12 7 12 12 15 15"/><line x1="17" y1="21" x2="23" y2="21"/></svg>
+            </span>
             <h3 class="h3" data-i18n="b.pain3.title">The evening belongs to the callback list.</h3>
             <p data-i18n="b.pain3.desc">Returning calls and writing quotes after supper is unpaid office work. It is also family time.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -237,7 +246,7 @@
       </div>
     </section>
     <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
+    <section class="section contact section--dark" id="contact" aria-labelledby="contact-title" data-reveal>
       <div class="wrap contact__grid">
         <div class="contact__pitch">
           <p class="kicker" data-i18n="b.contact.kicker">Start here</p>
@@ -322,7 +331,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=3"></script>
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/i18n.js?v=4"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>

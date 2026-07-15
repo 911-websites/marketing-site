@@ -267,6 +267,9 @@ window.I18N = {
     "h.p2.c2": "Emergencies forwarded",
     "h.p2.c3": "End-of-day summary",
     "h.p.more": "Learn more",
+    "h.hero.imgalt": "A trade crew reviewing work together on a job site",
+    "c.car.prev": "Previous testimonial",
+    "c.car.next": "Next testimonial",
     "h.break": "You stay on the job. We bring the next one.",
     "h.contact.title": "Your next job starts <span class=\"accent\">here.</span>",
     "h.contact.lead": "A 15-minute demo of the website and the receptionist, applied to your business.",
@@ -552,6 +555,9 @@ window.I18N = {
     "h.p2.c2": "Urgences transférées",
     "h.p2.c3": "Résumé de fin de journée",
     "h.p.more": "En savoir plus",
+    "h.hero.imgalt": "Une équipe de métier qui révise un chantier ensemble",
+    "c.car.prev": "Témoignage précédent",
+    "c.car.next": "Témoignage suivant",
     "h.break": "Vous restez sur le chantier. Nous amenons le suivant.",
     "h.contact.title": "Votre prochain chantier commence <span class=\"accent\">ici.</span>",
     "h.contact.lead": "Une démo de 15 minutes du site et de la réceptionniste, appliquée à votre entreprise.",
@@ -585,19 +591,23 @@ window.I18N = {
    fields (hero image, demo business name...) as the machine scales. */
 window.NICHES = {
   hvac: {
-    en: { pill: "HVAC",       town: "HVAC company" },
-    fr: { pill: "de chauffage", town: "de chauffage" }
+    img: "assets/img/crew.jpg",
+    en: { pill: "HVAC",       town: "HVAC company",       alt: "A trade crew reviewing work together on a job site" },
+    fr: { pill: "de chauffage", town: "de chauffage",     alt: "Une équipe de métier qui révise un chantier ensemble" }
   },
   plumbing: {
-    en: { pill: "plumbing",   town: "plumbing company" },
-    fr: { pill: "de plomberie", town: "de plomberie" }
+    img: "assets/img/plumbing-work.jpg",
+    en: { pill: "plumbing",   town: "plumbing company",   alt: "A professionally finished bathroom installation" },
+    fr: { pill: "de plomberie", town: "de plomberie",     alt: "Une salle de bain fraîchement installée, finition professionnelle" }
   },
   electrical: {
-    en: { pill: "electrical", town: "electrical company" },
-    fr: { pill: "d'électricité", town: "d'électricité" }
+    img: "assets/img/electrician.jpg",
+    en: { pill: "electrical", town: "electrical company", alt: "An electrician working on a panel with both hands busy" },
+    fr: { pill: "d'électricité", town: "d'électricité",   alt: "Un électricien au travail sur un panneau, les deux mains occupées" }
   },
   roofing: {
-    en: { pill: "roofing",    town: "roofing company" },
-    fr: { pill: "de toiture",  town: "de toiture" }
+    img: "assets/img/crew.jpg",
+    en: { pill: "roofing",    town: "roofing company",    alt: "A trade crew reviewing work together on a job site" },
+    fr: { pill: "de toiture",  town: "de toiture",        alt: "Une équipe de métier qui révise un chantier ensemble" }
   }
 };

@@ -12,6 +12,26 @@ Bilingual (FR + EN) marketing site with **two standalone landing pages**, each d
 
 The home presents the whole company (three clickable pillars); `/website`, `/reception` and `/crm` are slim detail sub-pages reusing the existing blocks. Shared sections (full pricing, guarantee band, testimonials, FAQ) live only on the home; sub-page nav links point back to them (`/#pricing`, `/#faq`).
 
+## Section inventory (for WordPress block mapping)
+
+Every page follows one locked contract: `section.section[.section--dark|.section--white] > .wrap > .section__head (+ content components)`. Components are reused across pages; colors and spacing come exclusively from the `:root` tokens in [styles.css](assets/css/styles.css).
+
+| Section (id/class) | Theme | Content component | Used on |
+|---|---|---|---|
+| `.hero` | paper | copy column + visual (`.hero-visual` photo / `.panel` chat or digest / `.plan` card) | all pages |
+| `#pillars .section--dark` | slate | 2 × `.tile--feature` + `.pillar-mini` (CRM) | home |
+| `#problem .section--dark` | slate | `.bento--three` of `.tile` | /website, /reception |
+| `#solution` | paper | `.bento` (feature tile + tiles) | /website, /reception |
+| `#how` | paper + seam | `.steps` | home, /website, /reception |
+| `.imgbreak` | photo | full-bleed image + one line | home, /website, /reception |
+| `#pricing .section--white` | white | `.plans` (3 × `.plan`) + note | home |
+| `.guarantee` | red | head + CTA | home |
+| `#proof` | paper | `.quote--feature` + `.carousel` | home |
+| `.cred` | white band | label + names list | all except /crm and /demo |
+| `#contact .section--dark` | slate | pitch + `.form` | all pages |
+| `#faq` | paper | `.qa` accordion | home |
+| `.footer` | slate | brand + nav + contact + CTA | all pages |
+
 ## Outreach domains and redirects
 
 Any domain you use in outreach should land prospects on this site even when typed by hand:
