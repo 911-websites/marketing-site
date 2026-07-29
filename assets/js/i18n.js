@@ -267,7 +267,7 @@ window.I18N = {
     "h.p2.c2": "Emergencies forwarded",
     "h.p2.c3": "End-of-day summary",
     "h.p.more": "Learn more",
-    "h.hero.imgalt": "A trade crew reviewing work together on a job site",
+    "h.hero.imgalt": "A home contractor standing by a residential electrical panel",
     "c.car.prev": "Previous testimonial",
     "c.car.next": "Next testimonial",
     "h.break": "You stay on the job. We bring the next one.",
@@ -555,7 +555,7 @@ window.I18N = {
     "h.p2.c2": "Urgences transférées",
     "h.p2.c3": "Résumé de fin de journée",
     "h.p.more": "En savoir plus",
-    "h.hero.imgalt": "Une équipe de métier qui révise un chantier ensemble",
+    "h.hero.imgalt": "Un artisan devant le panneau électrique d'une maison",
     "c.car.prev": "Témoignage précédent",
     "c.car.next": "Témoignage suivant",
     "h.break": "Vous restez sur le chantier. Nous amenons le suivant.",
@@ -591,9 +591,9 @@ window.I18N = {
    fields (hero image, demo business name...) as the machine scales. */
 window.NICHES = {
   hvac: {
-    img: "assets/img/crew.jpg",
-    en: { pill: "HVAC",       town: "HVAC company",       alt: "A trade crew reviewing work together on a job site" },
-    fr: { pill: "de chauffage", town: "de chauffage",     alt: "Une équipe de métier qui révise un chantier ensemble" }
+    img: "assets/img/contractor.jpg",
+    en: { pill: "HVAC",       town: "HVAC company",       alt: "A home contractor standing by a residential electrical panel" },
+    fr: { pill: "de chauffage", town: "de chauffage",     alt: "Un artisan devant le panneau électrique d'une maison" }
   },
   plumbing: {
     img: "assets/img/plumbing-work.jpg",
@@ -606,8 +606,8 @@ window.NICHES = {
     fr: { pill: "d'électricité", town: "d'électricité",   alt: "Un électricien au travail sur un panneau, les deux mains occupées" }
   },
   roofing: {
-    img: "assets/img/crew.jpg",
-    en: { pill: "roofing",    town: "roofing company",    alt: "A trade crew reviewing work together on a job site" },
-    fr: { pill: "de toiture",  town: "de toiture",        alt: "Une équipe de métier qui révise un chantier ensemble" }
+    img: "assets/img/contractor.jpg",
+    en: { pill: "roofing",    town: "roofing company",    alt: "A home contractor standing by a residential electrical panel" },
+    fr: { pill: "de toiture",  town: "de toiture",        alt: "Un artisan devant le panneau électrique d'une maison" }
   }
 };
