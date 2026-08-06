@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
 </head>
 <body data-page="crm">
 
@@ -114,6 +114,16 @@
             <span class="field__err" id="e-name" role="alert" aria-live="polite"></span>
           </div>
           <div class="field">
+            <label for="business"><span data-i18n="c.form.biz">Business name</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="business" name="business" required autocomplete="organization" aria-required="true" aria-describedby="e-business" />
+            <span class="field__err" id="e-business" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="email"><span data-i18n="c.form.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" aria-describedby="e-email" />
+            <span class="field__err" id="e-email" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
             <label for="phone"><span data-i18n="c.form.phone">Phone</span> <span class="req" aria-hidden="true">*</span></label>
             <input type="tel" id="phone" name="phone" required autocomplete="tel" aria-required="true" aria-describedby="e-phone" />
             <span class="field__err" id="e-phone" role="alert" aria-live="polite"></span>
@@ -159,7 +169,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=4"></script>
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/i18n.js?v=6"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>

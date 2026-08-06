@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
 </head>
 <body data-page="home">
 
@@ -96,7 +96,7 @@
           <div class="float-card float-card--chat" aria-hidden="true">
             <span class="who">
               <span class="live-dot"></span>
-              <span data-i18n="a.chat.who">Harbor Plumbing, smart chat</span>
+              <span data-i18n-html="a.chat.who"><span data-niche-co>Miller Home Services</span>, smart chat</span>
             </span>
             <span data-i18n="a.chat.m1">Good evening. Is this about a repair, an installation, or an emergency?</span>
           </div>
@@ -119,6 +119,27 @@
             </span>
             <p class="tile__big" data-i18n="h.p1.title">A website that wins the search.</p>
             <p data-i18n="h.p1.desc">Fast, professional, built for phones. Visitors see a company that shows up, and the built-in chat captures every request, day or night.</p>
+                        <div class="mock mock--browser" aria-hidden="true">
+              <div class="mock__bar">
+                <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
+                <span class="mock__url">rapiddryrestoration.ca</span>
+              </div>
+              <div class="mock__head">
+                <span class="mock__ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </span>
+                <span class="mock__id">
+                  <b data-i18n="h.p1.mock.who">Rapid Dry Assistant</b>
+                  <em data-i18n="h.p1.mock.status">Replies instantly</em>
+                </span>
+              </div>
+              <div class="mock__feed">
+                <span class="msg msg--user" data-i18n="h.p1.mock.m1">Basement flooded overnight, water's still sitting</span>
+                <span class="msg msg--ai" data-i18n="h.p1.mock.m2">Sorry to hear that. We can help today. What's your postal code?</span>
+                <span class="msg msg--user" data-i18n="h.p1.mock.m3">H3E 1M4, Nun's Island</span>
+                <span class="msg msg--ai" data-i18n="h.p1.mock.m4">Got it. A crew can be there between 1 and 3pm. Book that slot?</span>
+              </div>
+            </div>
             <div class="tile__chips">
               <span class="minichip" data-i18n="c.trust.1">Live in 24 hours</span>
               <span class="minichip" data-i18n="h.p1.c2">Smart chat included</span>
@@ -136,6 +157,24 @@
             </span>
             <p class="tile__big" data-i18n="h.p2.title">A receptionist that never misses a call.</p>
             <p data-i18n="h.p2.desc">It answers in your company's name, qualifies the request, books the appointment, and hands you a clean summary at the end of the day.</p>
+                        <div class="mock mock--call" aria-hidden="true">
+              <div class="call__head">
+                <span class="call__avatar">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </span>
+                <span class="call__id">
+                  <b data-i18n="h.p2.mock.title">Incoming call</b>
+                  <em>+1 (514) 555-0148</em>
+                </span>
+                <span class="call__timer"><span class="live-dot"></span>0:12</span>
+              </div>
+              <div class="call__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <p class="call__label" data-i18n="h.p2.mock.label">Live transcript</p>
+              <div class="mock__feed mock__feed--call">
+                <span class="msg msg--ai" data-i18n="h.p2.mock.t1">Northside Plumbing, how can I help?</span>
+                <span class="msg msg--user" data-i18n="h.p2.mock.t2">My water heater is leaking, can someone come today?</span>
+              </div>
+            </div>
             <div class="tile__chips">
               <span class="minichip" data-i18n="a.sol.f.c1">Answers 24/7</span>
               <span class="minichip" data-i18n="h.p2.c2">Emergencies forwarded</span>
@@ -149,53 +188,47 @@
 
         </div>
 
-        <!-- Sales CRM: an extension of the two pillars, not a third one -->
-        <a href="/crm" class="pillar-mini">
-          <span class="tile__ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
-          </span>
-          <span class="pillar-mini__body">
-            <span class="pillar-mini__t" data-i18n="c.plan3.name">Sales CRM</span>
-            <span class="pillar-mini__s" data-i18n="c.plan3.desc">The receptionist, plus a clear view of every request.</span>
-          </span>
-          <span class="pillar__link" style="margin-top: 0;">
-            <span data-i18n="h.p.more">Learn more</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </span>
-        </a>
       </div>
     </section>
 
-    <!-- HOW -->
-    <section class="section section--seam" id="how" aria-labelledby="how-title" data-reveal>
+    <!-- FEATURES -->
+    <section class="section section--seam" id="features" aria-labelledby="features-title" data-reveal>
       <div class="wrap">
         <div class="section__head">
-          <p class="kicker" data-i18n="a.how.kicker">How it works</p>
-          <h2 class="h2" id="how-title" data-i18n="a.how.title">Live in 24 hours. Three steps.</h2>
+          <p class="kicker" data-i18n="h.feat.kicker">Built for the way customers search today</p>
+          <h2 class="h2" id="features-title" data-i18n="h.feat.title">Turn site visitors into booked jobs</h2>
+          <p class="lead" data-i18n="h.feat.lead">Most trade websites look like they were built in 2012. Switch to a website that actually grows your revenue.</p>
         </div>
-        <ol class="steps stagger">
-          <li class="step">
-            <span class="step__n" aria-hidden="true">1</span>
-            <div>
-              <h3 class="h3" data-i18n="a.how.1.title">A 15-minute call</h3>
-              <p data-i18n="a.how.1.desc">Your trade, your area, your services. We take it from there.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">2</span>
-            <div>
-              <h3 class="h3" data-i18n="a.how.2.title">We build, you approve</h3>
-              <p data-i18n="a.how.2.desc">A complete site within 24 hours, reviewed with you before it goes live.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__n" aria-hidden="true">3</span>
-            <div>
-              <h3 class="h3" data-i18n="a.how.3.title">Requests reach your pocket</h3>
-              <p data-i18n="a.how.3.desc">Every request lands as a text and an email, with the details already collected.</p>
-            </div>
-          </li>
-        </ol>
+        <div class="bento stagger">
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </span>
+            <h3 class="h3" data-i18n="a.sol.1.title">Look great on mobile</h3>
+            <p data-i18n="a.sol.1.desc">Your customers are searching on the go. A slow, outdated mobile site can cost you the job before they even call.</p>
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <h3 class="h3" data-i18n="a.sol.2.title">Load faster than the competition</h3>
+            <p data-i18n="a.sol.2.desc">When emergency strikes, customers choose the company that responds first. Your website should feel just as fast.</p>
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <h3 class="h3" data-i18n="a.sol.3.title">Rank higher on Google</h3>
+            <p data-i18n="a.sol.3.desc">Tired of ranking low and losing jobs to competitors? We build modern websites optimized for Google so local customers find you first.</p>
+          </article>
+          <article class="tile">
+            <span class="tile__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3 class="h3" data-i18n="a.sol.4.title">Book jobs while you sleep</h3>
+            <p data-i18n="a.sol.4.desc">Never miss another lead. Our AI lead capture bot answers questions, captures requests, and books appointments 24/7.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -307,7 +340,7 @@
               <div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div>
               <p class="quote__text" data-i18n="b.q2.text">“I look at one summary at supper and call two people back. The rest of the evening is mine.”</p>
               <div class="quote__by">
-                <span class="quote__avatar" style="--av:#0E9F6E;" aria-hidden="true">KT</span>
+                <span class="quote__avatar" style="--av:#0B7A54;" aria-hidden="true">KT</span>
                 <div>
                   <p class="quote__name" data-i18n="b.q2.name">Karine T.</p>
                   <p class="quote__role" data-i18n="b.q2.role">Electrical, Longueuil QC</p>
@@ -338,7 +371,6 @@
         <p class="proof__note" data-i18n="c.proof.note">Example testimonials, shown while we collect our first client stories.</p>
       </div>
     </section>
-
     <!-- CREDIBILITY (founder pedigree, text only, no logos) -->
     <section class="cred" aria-label="Team experience" data-reveal>
       <div class="wrap cred__inner">
@@ -347,54 +379,12 @@
           <li>Home Depot</li>
           <li>Lowe's</li>
           <li>Castorama</li>
-          <li>General Motors</li>
           <li>Chevrolet</li>
+          <li>Cadillac</li>
           <li>Lexus</li>
         </ul>
       </div>
     </section>
-
-    <!-- CONTACT (slate block) -->
-    <section class="section contact section--dark" id="contact" aria-labelledby="contact-title" data-reveal>
-      <div class="wrap contact__grid">
-        <div class="contact__pitch">
-          <p class="kicker" data-i18n="a.contact.kicker">Start here</p>
-          <h2 class="display" id="contact-title" data-i18n-html="h.contact.title">Your next job starts <span class="accent">here.</span></h2>
-          <p class="lead" data-i18n="h.contact.lead">A 15-minute demo of the website and the receptionist, applied to your business.</p>
-          <ul class="trust" aria-label="Guarantees">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              <span data-i18n="c.trust.1">Live in 24 hours</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span data-i18n="c.trust.3">Cancel anytime</span>
-            </li>
-          </ul>
-          <a href="/demo" class="btn btn--ghost" style="margin-top: var(--s8);" data-i18n="c.cta.example">See a live example</a>
-        </div>
-
-        <form class="form" id="demoForm" data-subject-key="h.form.subject" novalidate aria-label="Demo request">
-          <div class="field">
-            <label for="name"><span data-i18n="c.form.name">Full name</span> <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" required autocomplete="name" aria-required="true" aria-describedby="e-name" />
-            <span class="field__err" id="e-name" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="phone"><span data-i18n="c.form.phone">Phone</span> <span class="req" aria-hidden="true">*</span></label>
-            <input type="tel" id="phone" name="phone" required autocomplete="tel" aria-required="true" aria-describedby="e-phone" />
-            <span class="field__err" id="e-phone" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="field">
-            <label for="message" data-i18n="c.form.msg">Your trade, your area, your biggest headache</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full btn--lg" data-i18n="c.form.send">Request a demo</button>
-          <p class="form__hint" data-i18n="c.form.hint">This opens your email app, addressed to team@911websites.co.</p>
-        </form>
-      </div>
-    </section>
-
     <!-- FAQ (mixed, below the CTA) -->
     <section class="section" id="faq" aria-labelledby="faq-title" data-reveal>
       <div class="wrap faq">
@@ -422,6 +412,56 @@
           <button class="qa__q" aria-expanded="false" aria-controls="qa5"><span data-i18n="a.f5.q">Is there a contract?</span><span class="qa__icon" aria-hidden="true"></span></button>
           <div class="qa__a" id="qa5" hidden><p data-i18n="a.f5.a">Month to month. If the site does not earn its keep, cancel anytime.</p></div>
         </div>
+      </div>
+    </section>
+    <!-- CONTACT (slate block) -->
+    <section class="section contact section--dark" id="contact" aria-labelledby="contact-title" data-reveal>
+      <div class="wrap contact__grid">
+        <div class="contact__pitch">
+          <p class="kicker" data-i18n="a.contact.kicker">Start here</p>
+          <h2 class="display" id="contact-title" data-i18n-html="h.contact.title">Your next job starts <span class="accent">here.</span></h2>
+          <p class="lead" data-i18n="h.contact.lead">A 15-minute demo of the website and the receptionist, applied to your business.</p>
+          <ul class="trust" aria-label="Guarantees">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span data-i18n="c.trust.1">Live in 24 hours</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span data-i18n="c.trust.3">Cancel anytime</span>
+            </li>
+          </ul>
+          <a href="/demo" class="btn btn--ghost" style="margin-top: var(--s8);" data-i18n="c.cta.example">See a live example</a>
+        </div>
+
+        <form class="form" id="demoForm" data-subject-key="h.form.subject" novalidate aria-label="Demo request">
+          <div class="field">
+            <label for="name"><span data-i18n="c.form.name">Full name</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name" aria-required="true" aria-describedby="e-name" />
+            <span class="field__err" id="e-name" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="business"><span data-i18n="c.form.biz">Business name</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="business" name="business" required autocomplete="organization" aria-required="true" aria-describedby="e-business" />
+            <span class="field__err" id="e-business" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="email"><span data-i18n="c.form.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" aria-describedby="e-email" />
+            <span class="field__err" id="e-email" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="phone"><span data-i18n="c.form.phone">Phone</span> <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" aria-required="true" aria-describedby="e-phone" />
+            <span class="field__err" id="e-phone" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="c.form.msg">Your trade, your area, your biggest headache</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg" data-i18n="c.form.send">Request a demo</button>
+          <p class="form__hint" data-i18n="c.form.hint">This opens your email app, addressed to team@911websites.co.</p>
+        </form>
       </div>
     </section>
 
@@ -456,7 +496,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=4"></script>
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/i18n.js?v=6"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>

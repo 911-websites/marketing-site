@@ -2,3 +2,7 @@
 .vercel
 node_modules/
 *.log
+
+# Source docs / working files, not part of the site
+911 Websites_website copy edits/
+.impeccable/

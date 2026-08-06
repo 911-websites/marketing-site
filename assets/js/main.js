@@ -30,6 +30,11 @@
       var v = tok[el.getAttribute('data-niche-token')];
       if (typeof v === 'string') el.textContent = v;
     });
+    // Keep the demo company name in step with the trade shown in the photo,
+    // otherwise the hero reads as an electrician answering for a plumber.
+    document.querySelectorAll('[data-niche-co]').forEach(function (el) {
+      if (typeof tok.co === 'string') el.textContent = tok.co;
+    });
     // Swap the hero photo so the visual never contradicts the trade
     var img = document.querySelector('[data-niche-img]');
     if (img) {
@@ -254,6 +259,8 @@
   var form = document.getElementById('demoForm');
   if (form) {
     var nameInput = form.querySelector('[name="name"]');
+    var bizInput = form.querySelector('[name="business"]');
+    var emailInput = form.querySelector('[name="email"]');
     var phoneInput = form.querySelector('[name="phone"]');
     var msgInput = form.querySelector('[name="message"]');
 
@@ -268,6 +275,8 @@
       e.preventDefault();
       var ok = true;
       if (!nameInput.value || nameInput.value.trim().length < 2) { setErr(nameInput, 'c.form.err.name'); ok = false; } else setErr(nameInput, null);
+      if (bizInput && (!bizInput.value || bizInput.value.trim().length < 2)) { setErr(bizInput, 'c.form.err.biz'); ok = false; } else if (bizInput) setErr(bizInput, null);
+      if (emailInput && !/^[^@\s]+@[^@\s.]+\.[^@\s]{2,}$/.test(emailInput.value.trim())) { setErr(emailInput, 'c.form.err.email'); ok = false; } else if (emailInput) setErr(emailInput, null);
       if (!/^[\d\s()+\-.]{7,}$/.test(phoneInput.value.trim())) { setErr(phoneInput, 'c.form.err.phone'); ok = false; } else setErr(phoneInput, null);
       if (!ok) return;
 
@@ -275,6 +284,8 @@
       var subject = t(subjKey) || 'Demo request';
       var body =
         t('c.form.name') + ': ' + nameInput.value.trim() + '\n' +
+        (bizInput ? t('c.form.biz') + ': ' + bizInput.value.trim() + '\n' : '') +
+        (emailInput ? t('c.form.email') + ': ' + emailInput.value.trim() + '\n' : '') +
         t('c.form.phone') + ': ' + phoneInput.value.trim() + '\n\n' +
         (msgInput && msgInput.value.trim() ? msgInput.value.trim() + '\n\n' : '') +
         'Lang: ' + lang.toUpperCase() + ' / Page: /' + (page === 'a' ? 'website' : page === 'b' ? 'reception' : page === 'crm' ? 'crm' : '');
