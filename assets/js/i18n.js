@@ -311,7 +311,19 @@ window.I18N = {
     "home.b.tag": "Variant B",
     "home.b.title": "The 24/7 Receptionist",
     "home.b.desc": "Lead with the calls: answered, qualified, summarized. Receptionist tier featured.",
-    "home.b.cta": "View /reception"
+    "home.b.cta": "View /reception",
+
+    /* ── Live example (/demo) ── */
+    "demo.meta.title": "See a live example: the same business, two websites | 911 Websites",
+    "demo.meta.desc": "A side-by-side look at a trade website before and after we rebuild it. Same business, same services, same phone number, only the website changed.",
+    "demo.kicker": "Live example",
+    "demo.h1": "The same business. Two websites.",
+    "demo.lead": "One HVAC contractor in Houston. Same services, same phone number, same thirty years on the job. The only thing that changed is the website.",
+    "demo.note": "Both pages below are samples built by 911 Websites. The “before” is a faithful recreation of a real contractor’s website — same layout, same typography, same structure — with the business’s identity removed. The company name, phone number and address shown are invented.",
+    "demo.tab.before": "Before",
+    "demo.tab.after": "After",
+    "demo.cap.before": "Fixed-width, built for a desktop monitor. On a phone it does not reshape — the customer pinches and scrolls sideways to find the number. Nothing tells them what to do next.",
+    "demo.cap.after": "The phone number is the first thing you see, and it is tappable. Services, proof and service area are laid out to be scanned in seconds. It reshapes to any screen, and the smart chat captures requests while the crew is on a job."
   },
 
   /* ─────────────────────── FRANÇAIS ─────────────────────── */
@@ -618,7 +630,19 @@ window.I18N = {
     "home.b.tag": "Variante B",
     "home.b.title": "La Réceptionniste 24/7",
     "home.b.desc": "L'angle appels : répondus, qualifiés, résumés. Forfait Réceptionniste en avant.",
-    "home.b.cta": "Voir /reception"
+    "home.b.cta": "Voir /reception",
+
+    /* ── Exemple en ligne (/demo) ── */
+    "demo.meta.title": "Voir un exemple : la même entreprise, deux sites | 911 Websites",
+    "demo.meta.desc": "Un site d'artisan avant et après refonte, côte à côte. Même entreprise, mêmes services, même numéro : seul le site a changé.",
+    "demo.kicker": "Exemple en ligne",
+    "demo.h1": "La même entreprise. Deux sites.",
+    "demo.lead": "Un chauffagiste-climaticien de Houston. Mêmes services, même numéro, même trentaine d'années de métier. La seule chose qui a changé, c'est le site.",
+    "demo.note": "Les deux pages ci-dessous sont des exemples réalisés par 911 Websites. Le « avant » est une reconstitution fidèle du site d'un vrai artisan — même mise en page, même typographie, même structure — dont l'identité a été retirée. Le nom, le numéro de téléphone et l'adresse affichés sont inventés.",
+    "demo.tab.before": "Avant",
+    "demo.tab.after": "Après",
+    "demo.cap.before": "Largeur fixe, pensé pour un écran d'ordinateur. Sur un téléphone il ne se réadapte pas : le client doit zoomer et faire défiler latéralement pour trouver le numéro. Rien ne lui dit quoi faire ensuite.",
+    "demo.cap.after": "Le numéro est la première chose qu'on voit, et il est cliquable. Services, preuves et zone d'intervention se lisent en quelques secondes. Le site s'adapte à tous les écrans, et le chat capte les demandes pendant que l'équipe est en intervention."
   }
 };
 

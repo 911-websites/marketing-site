@@ -6,3 +6,7 @@ node_modules/
 # Source docs / working files, not part of the site
 911 Websites_website copy edits/
 .impeccable/
+
+# Client source + WordPress working files: never part of the deployed site
+ethanclark-redesign.html
+wp-home-corrige.html
