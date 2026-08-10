@@ -1312,11 +1312,9 @@ body::after {
 .cmp { padding: var(--s16) 0 var(--s24); }
 .cmp__head { max-width: 46rem; }
 .cmp__note {
-  margin-top: var(--s5);
-  padding: var(--s4) var(--s5);
-  border-left: 3px solid var(--line-2);
-  background: var(--surface-2);
-  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin-top: var(--s8);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--line);
   color: var(--text-3);
   font-size: var(--fs-sm);
   line-height: 1.55;

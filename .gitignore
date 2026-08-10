@@ -10,3 +10,6 @@ node_modules/
 # Client source + WordPress working files: never part of the deployed site
 ethanclark-redesign.html
 wp-home-corrige.html
+
+# Full-resolution stock originals: kept locally, never deployed
+pexels-*.jpg
