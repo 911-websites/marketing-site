@@ -1313,7 +1313,7 @@ body::after {
 
 /* ── LIVE EXAMPLE / BEFORE-AFTER ────────────────── */
 .cmp { padding: var(--s16) 0 var(--s24); }
-.cmp__head { max-width: 46rem; }
+.cmp__head { max-width: 46rem; margin-inline: auto; text-align: center; }
 .cmp__note {
   margin-top: var(--s8);
   padding-top: var(--s4);
@@ -1422,6 +1422,60 @@ body::after {
 
 @media (prefers-reduced-motion: reduce) {
   .cmp__panel { transition: none; }
+}
+
+
+/* ── LIVE EXAMPLE: Étienne's review ──────────────
+   "on comprend pas ce qu'on regarde", "la grille est bizarre, le texte
+   tout à gauche", "j'enlèverais quasiment tous les textes: ce qui est
+   payant c'est la frame", "les boutons font défaut". So: the copy is
+   centred and cut to one line, the frame carries the page, the toggle
+   is deliberate rather than default, and the pricing sits right under. */
+.cmp__tabs { display: flex; width: fit-content; margin-inline: auto; }
+.cmp__tab {
+  padding: 13px 34px;
+  font-size: var(--fs-body);
+  letter-spacing: -0.01em;
+}
+.cmp__tab[aria-selected="true"] {
+  box-shadow: 0 1px 2px rgba(28, 25, 20, .14), 0 0 0 1px rgba(28, 25, 20, .06);
+}
+.cmp__caption { margin-inline: auto; text-align: center; }
+.cmp__fine {
+  margin: var(--s4) auto 0;
+  max-width: 52ch;
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: var(--text-3);
+  line-height: 1.5;
+}
+
+.cmp__plans {
+  display: grid;
+  gap: var(--s3);
+  margin-top: var(--s12);
+}
+.cmp__plan {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s4);
+  padding: 20px var(--s6);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+  transition: border-color var(--t), transform var(--t);
+}
+.cmp__plan:hover { border-color: var(--line-2); transform: translateY(-1px); }
+.cmp__plan--pick { border-color: var(--text); border-width: 2px; padding: 19px calc(var(--s6) - 1px); }
+.cmp__plan b { font-family: var(--font-display); font-size: var(--fs-h3); letter-spacing: -0.01em; }
+.cmp__price { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; white-space: nowrap; }
+.cmp__price s { font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 400; color: var(--text-3); text-decoration: none; margin-left: 4px; }
+.cmp__actions { justify-content: center; }
+
+@media (min-width: 760px) {
+  .cmp__plans { grid-template-columns: repeat(3, 1fr); }
+  .cmp__plan { flex-direction: column; align-items: flex-start; gap: var(--s2); }
 }
 
 /* ════════════════════════════════════════════════
