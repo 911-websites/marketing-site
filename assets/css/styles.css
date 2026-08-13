@@ -38,7 +38,10 @@
   --slate:      #24211D;
   --on-slate:   #F5F2EC;
   --on-slate-2: rgba(245, 242, 236, 0.72);
-  --red-on-slate: #FF9B9F;
+  /* Étienne read the old #FF9B9F as pink on the dark bands. The brand red
+     itself only reaches 2.9:1 against --slate, so it cannot be used here;
+     this is as red as the accent gets while staying legible (5.75:1). */
+  --red-on-slate: #FF6B63;
 
   /* Type */
   --font-display: 'Bricolage Grotesque', Georgia, serif;
@@ -1456,6 +1459,9 @@ body::after {
   .panel { justify-self: end; }
 
   .bento { grid-template-columns: repeat(3, 1fr); }
+  /* Four tiles across three columns leave an orphan on the second row;
+     hold this grid at 2x2 so the block stays balanced. */
+  .bento--four { grid-template-columns: repeat(2, 1fr); }
   .tile--feature { grid-column: span 2; display: flex; flex-direction: column; justify-content: center; }
   .tile--feature .tile__ico { margin-bottom: var(--s4); }
 

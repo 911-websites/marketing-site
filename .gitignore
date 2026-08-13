@@ -13,3 +13,6 @@ wp-home-corrige.html
 
 # Full-resolution stock originals: kept locally, never deployed
 pexels-*.jpg
+
+# Call transcripts: working files, never deployed
+Tony x Etienne*.txt

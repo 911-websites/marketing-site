@@ -62,10 +62,10 @@
 
     <div class="cmp__tabs" role="tablist" aria-label="Before and after" data-cmp-tabs>
       <button type="button" class="cmp__tab" role="tab" id="tab-before"
-              aria-controls="panel-before" aria-selected="true" data-cmp-key="before"
+              aria-controls="panel-before" aria-selected="false" tabindex="-1" data-cmp-key="before"
               data-i18n="demo.tab.before">Before</button>
       <button type="button" class="cmp__tab" role="tab" id="tab-after"
-              aria-controls="panel-after" aria-selected="false" tabindex="-1" data-cmp-key="after"
+              aria-controls="panel-after" aria-selected="true" data-cmp-key="after"
               data-i18n="demo.tab.after">After</button>
     </div>
 
@@ -76,19 +76,19 @@
       </div>
 
       <div class="cmp__stage">
-        <div class="cmp__panel" id="panel-before" role="tabpanel" aria-labelledby="tab-before" data-active>
+        <div class="cmp__panel" id="panel-before" role="tabpanel" aria-labelledby="tab-before">
           <p class="cmp__nojs" data-i18n="demo.tab.before">Before</p>
           <iframe src="/demo-before" title="The website before the rebuild" loading="lazy"></iframe>
         </div>
-        <div class="cmp__panel" id="panel-after" role="tabpanel" aria-labelledby="tab-after">
+        <div class="cmp__panel" id="panel-after" role="tabpanel" aria-labelledby="tab-after" data-active>
           <p class="cmp__nojs" data-i18n="demo.tab.after">After</p>
           <iframe src="/demo-after" title="The website after the rebuild" loading="lazy"></iframe>
         </div>
       </div>
     </div>
 
-    <p class="cmp__caption" data-cmp-caption="before" data-i18n="demo.cap.before">Fixed-width, built for a desktop monitor. On a phone it does not reshape &mdash; the customer pinches and scrolls sideways to find the number. Nothing tells them what to do next.</p>
-    <p class="cmp__caption" data-cmp-caption="after" data-i18n="demo.cap.after" hidden>The phone number is the first thing you see, and it is tappable. Services, proof and service area are laid out to be scanned in seconds. It reshapes to any screen, and the smart chat captures requests while the crew is on a job.</p>
+    <p class="cmp__caption" data-cmp-caption="before" data-i18n="demo.cap.before" hidden>Fixed-width, built for a desktop monitor. On a phone it does not reshape &mdash; the customer pinches and scrolls sideways to find the number. Nothing tells them what to do next.</p>
+    <p class="cmp__caption" data-cmp-caption="after" data-i18n="demo.cap.after">The phone number is the first thing you see, and it is tappable. Services, proof and service area are laid out to be scanned in seconds. It reshapes to any screen, and the smart chat captures requests while the crew is on a job.</p>
 
     <div class="cmp__actions">
       <a href="/#contact" class="btn btn--primary btn--lg" data-i18n="c.cta.demo">Book a demo</a>
