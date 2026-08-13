@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Internal comparison page, not for visitors arriving from search.
+Disallow: /lab
+
+# The two sample sites shown inside the /demo selector. They are meant to be
+# seen in that frame, with the explanation around them, not found on their own.
+Disallow: /demo-before
+Disallow: /demo-after
+
+Sitemap: https://911websites.co/sitemap.xml
