@@ -313,10 +313,10 @@ window.I18N = {
     "home.b.cta": "View /reception",
 
     /* ── Live example (/demo) ── */
-    "demo.meta.title": "See a live example: the same business, two websites | 911 Websites",
-    "demo.meta.desc": "A side-by-side look at a trade website before and after we rebuild it. Same business, same services, same phone number, only the website changed.",
+    "demo.meta.title": "The same contractor, before and after 911 Websites",
+    "demo.meta.desc": "One trade business, its old website and the one we built. Same services, same phone number — only the website changed.",
     "demo.kicker": "Live example",
-    "demo.h1": "The same business. Two websites.",
+    "demo.h1": "The same contractor, before and after 911 Websites.",
     "demo.lead": "Same trade, same phone number. Only the website changed.",
     "demo.tab.before": "Before",
     "demo.tab.after": "After",
@@ -631,10 +631,10 @@ window.I18N = {
     "home.b.cta": "Voir /reception",
 
     /* ── Exemple en ligne (/demo) ── */
-    "demo.meta.title": "Voir un exemple : la même entreprise, deux sites | 911 Websites",
-    "demo.meta.desc": "Un site d'artisan avant et après refonte, côte à côte. Même entreprise, mêmes services, même numéro : seul le site a changé.",
+    "demo.meta.title": "Le même artisan, avant et après 911 Websites",
+    "demo.meta.desc": "Un artisan, son ancien site et celui qu'on lui a construit. Mêmes services, même numéro — seul le site a changé.",
     "demo.kicker": "Exemple en ligne",
-    "demo.h1": "La même entreprise. Deux sites.",
+    "demo.h1": "Le même artisan, avant et après 911 Websites.",
     "demo.lead": "Même métier, même numéro. Seul le site a changé.",
     "demo.tab.before": "Avant",
     "demo.tab.after": "Après",
